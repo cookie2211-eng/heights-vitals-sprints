@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Heights · Vitals · Creative Sprint Assessment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"></script>
+
+<style>
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0d1117;--navy2:#141b24;--navy3:#1c2630;
+  --rule:rgba(255,255,255,.08);--rule2:rgba(255,255,255,.14);
+  --ink:#f0ede8;--ink2:rgba(240,237,232,.65);--ink3:rgba(240,237,232,.38);
+  --blue:#378ADD;--blue-lt:rgba(55,138,221,.15);
+  --green:#639922;--green-lt:rgba(99,153,34,.15);
+  --amber:#EF9F27;--amber-lt:rgba(239,159,39,.15);
+  --red:#E24B4A;--red-lt:rgba(226,75,74,.15);
+  --gray-lt:rgba(180,178,169,.12);
+  --radius:8px;--radius-lg:12px;
+}
+body{font-family:'DM Sans',sans-serif;background:var(--navy);color:var(--ink);
+  font-size:13px;line-height:1.5;padding:40px 48px 80px;max-width:1100px;margin:0 auto;}
+.page-hdr{display:flex;align-items:flex-end;justify-content:space-between;
+  border-bottom:1px solid var(--rule2);padding-bottom:20px;margin-bottom:36px;}
+.page-hdr-l .eyebrow{font-size:11px;font-weight:500;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:6px;}
+.page-hdr-l h1{font-family:'DM Serif Display',serif;font-size:32px;
+  font-weight:400;line-height:1.1;}
+.page-hdr-l h1 em{font-style:italic;color:var(--blue);}
+.page-hdr-r{text-align:right;font-size:11px;color:var(--ink3);line-height:1.9;}
+.page-hdr-r strong{color:var(--ink2);}
+.page-hdr-r .scope-in{color:rgba(99,153,34,.9);}
+.page-hdr-r .scope-out{color:rgba(226,75,74,.7);}
+.sec{display:flex;align-items:baseline;gap:12px;margin:32px 0 14px;
+  padding-bottom:8px;border-bottom:1px solid var(--rule);}
+.sec h2{font-family:'DM Serif Display',serif;font-size:17px;font-weight:400;}
+.sec span{font-size:11px;color:var(--ink3);}
+.card{background:var(--navy2);border:1px solid var(--rule);
+  border-radius:var(--radius-lg);padding:18px 20px;}
+.fw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:28px;}
+.fw-tile{background:var(--navy2);border:1px solid var(--rule);
+  border-radius:var(--radius-lg);padding:16px 18px;border-top:3px solid transparent;}
+.fw-tile.blue{border-top-color:var(--blue);}
+.fw-tile.amber{border-top-color:var(--amber);}
+.fw-tile.green{border-top-color:var(--green);}
+.fw-window{font-size:15px;font-weight:500;margin-bottom:4px;}
+.fw-action{font-size:11px;font-weight:600;text-transform:uppercase;
+  letter-spacing:.08em;margin-bottom:8px;}
+.fw-tile.blue .fw-action{color:var(--blue);}
+.fw-tile.amber .fw-action{color:var(--amber);}
+.fw-tile.green .fw-action{color:var(--green);}
+.fw-desc{font-size:12px;color:var(--ink2);line-height:1.55;}
+.why-box{background:var(--navy2);border:1px solid var(--rule);
+  border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:28px;}
+.why-title{font-size:11px;font-weight:500;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--ink3);margin-bottom:14px;}
+.why-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:18px;}
+.wstat{background:var(--navy3);border-radius:var(--radius);padding:12px 14px;text-align:center;}
+.wstat-val{font-size:22px;font-weight:500;line-height:1;margin-bottom:5px;}
+.wstat-lbl{font-size:10px;color:var(--ink3);line-height:1.4;}
+.chart-wrap{position:relative;}
+.lc-divider{height:1px;background:var(--rule);margin:18px 0;}
+.lc-headline{font-size:13px;font-weight:500;margin-bottom:10px;}
+.lc-sub{font-size:11px;color:var(--ink2);margin-bottom:14px;line-height:1.6;}
+.lc-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px;}
+.lc-tile{border-radius:var(--radius);padding:12px 14px;text-align:center;}
+.lc-tile.identify{background:var(--blue-lt);border:1px solid rgba(55,138,221,.25);}
+.lc-tile.confirm{background:var(--green-lt);border:1px solid rgba(99,153,34,.25);}
+.lc-tile.scale{background:var(--amber-lt);border:1px solid rgba(239,159,39,.25);}
+.lc-val{font-size:22px;font-weight:500;line-height:1;margin-bottom:4px;}
+.lc-lbl{font-size:11px;font-weight:600;margin-bottom:4px;}
+.lc-tile.identify .lc-lbl{color:var(--blue);}
+.lc-tile.confirm .lc-lbl{color:var(--green);}
+.lc-tile.scale .lc-lbl{color:var(--amber);}
+.lc-sub2{font-size:10px;color:var(--ink3);line-height:1.45;}
+.why-note{font-size:11px;color:var(--ink2);line-height:1.65;
+  border-left:2px solid var(--rule2);padding-left:12px;margin-top:14px;}
+.sprint-block{background:var(--navy2);border:1px solid var(--rule);
+  border-radius:var(--radius-lg);padding:16px 20px;margin-bottom:8px;}
+.sprint-block.gap-block{border-style:dashed;background:transparent;}
+.sprint-block.pre-block{border-color:var(--rule2);}
+.sprint-hdr{display:flex;align-items:baseline;justify-content:space-between;
+  gap:12px;margin-bottom:8px;}
+.sprint-name{font-size:14px;font-weight:500;}
+.sprint-name.muted{color:var(--ink2);}
+.sprint-dates{font-size:11px;color:var(--ink3);text-align:right;
+  line-height:1.6;white-space:nowrap;}
+.sprint-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:12px;}
+.sstat{text-align:center;background:var(--navy3);border-radius:var(--radius);padding:8px 6px;}
+.sstat-val{font-size:16px;font-weight:500;}
+.sstat-lbl{font-size:9px;color:var(--ink3);margin-top:3px;line-height:1.3;}
+.pill{display:inline-flex;align-items:center;font-size:10px;padding:3px 8px;
+  border-radius:12px;margin-right:4px;margin-bottom:8px;background:var(--navy3);
+  color:var(--ink2);border:1px solid var(--rule2);}
+.badge{display:inline-block;font-size:10px;font-weight:500;
+  padding:2px 7px;border-radius:4px;margin-left:8px;vertical-align:middle;}
+.badge-amber{background:var(--amber-lt);color:var(--amber);}
+.badge-gray{background:var(--gray-lt);color:var(--ink3);border:1px solid var(--rule2);}
+.badge-green{background:var(--green-lt);color:var(--green);}
+.pipeline-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0;}
+.pipe-card{border-radius:var(--radius);padding:10px 12px;text-align:center;}
+.pipe-card.confirmed{background:var(--green-lt);border:1px solid rgba(99,153,34,.25);}
+.pipe-card.near-strong{background:var(--blue-lt);border:1px solid rgba(55,138,221,.25);}
+.pipe-card.near-weak{background:var(--amber-lt);border:1px solid rgba(239,159,39,.25);}
+.pipe-card.cold{background:var(--navy3);border:1px solid var(--rule);}
+.pipe-val{font-size:22px;font-weight:500;line-height:1;}
+.pipe-lbl{font-size:10px;font-weight:600;margin-top:3px;margin-bottom:3px;}
+.pipe-card.confirmed .pipe-lbl{color:var(--green);}
+.pipe-card.near-strong .pipe-lbl{color:var(--blue);}
+.pipe-card.near-weak .pipe-lbl{color:var(--amber);}
+.pipe-card.cold .pipe-lbl{color:var(--ink3);}
+.pipe-sub{font-size:10px;color:var(--ink3);line-height:1.4;}
+.assess-box{border-radius:var(--radius);padding:10px 14px;margin-top:10px;}
+.assess-box.done{background:var(--green-lt);border:1px solid rgba(99,153,34,.2);}
+.assess-box.partial{background:var(--amber-lt);border:1px solid rgba(239,159,39,.2);}
+.assess-box.pending{background:var(--blue-lt);border:1px solid rgba(55,138,221,.2);}
+.assess-box.early{background:var(--navy3);border:1px solid var(--rule);}
+.assess-lbl{font-size:11px;font-weight:500;margin-bottom:3px;}
+.assess-box.done .assess-lbl{color:var(--green);}
+.assess-box.partial .assess-lbl{color:var(--amber);}
+.assess-box.pending .assess-lbl{color:var(--blue);}
+.assess-box.early .assess-lbl{color:var(--ink2);}
+.assess-meta{font-size:10px;color:var(--ink3);line-height:1.55;}
+.pre-windows{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:10px 0 6px;}
+.pre-win-card{background:var(--navy3);border-radius:var(--radius);padding:10px 12px;}
+.pre-win-label{font-size:10px;color:var(--ink3);margin-bottom:5px;line-height:1.35;}
+.pre-win-stat{font-size:15px;font-weight:500;}
+.pre-win-sub{font-size:10px;color:var(--ink3);margin-top:2px;}
+.launch-legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;
+  font-size:11px;color:var(--ink3);}
+.leg-item{display:flex;align-items:center;gap:5px;}
+.leg-sq{width:10px;height:10px;border-radius:2px;flex-shrink:0;}
+.leg-line{width:14px;border-top:1.5px dashed rgba(180,178,169,.5);}
+.gap-note{font-size:11px;color:var(--ink3);line-height:1.65;padding:4px 0;}
+.footer{border-top:1px solid var(--rule);padding-top:14px;margin-top:48px;
+  display:flex;justify-content:space-between;font-size:10px;color:var(--ink3);}
+
+</style>
+</head>
+<body>
+
+<div class="page-hdr">
+  <div class="page-hdr-l">
+    <div class="eyebrow">Heights · Meta UK · Vitals⁺</div>
+    <h1>Creative <em>Sprint Assessment</em></h1>
+  </div>
+  <div class="page-hdr-r">
+    <strong>Heights · Meta UK</strong><br>
+    Data: Sep 2025 – 26 Apr 2026<br>
+    Winner = ≥£3,000 spend in first 30 days<br>
+    <span class="scope-in">Includes:</span> Vitals⁺ ads · Free Magnesium offer ads<br>
+    <span class="scope-out">Excludes:</span> Intro Bundle · standalone Magnesium⁺ · Biotic · Thrive
+  </div>
+</div>
+<div class="sec"><h2>1 · Assessment framework</h2><span>How to read creative performance</span></div>
+<div class="fw-grid">
+  <div class="fw-tile blue">
+    <div class="fw-window">Days 1–14</div>
+    <div class="fw-action">Early signal</div>
+    <div class="fw-desc">Monitor CPAs and spend allocation. Strong performance here = potential unicorn. Act — don't wait for the 30-day window.</div>
+  </div>
+  <div class="fw-tile amber">
+    <div class="fw-window">Days 14–30</div>
+    <div class="fw-action">Formal winner assessment</div>
+    <div class="fw-desc">Decide what to scale and cut. You're assessing the previous sprint's output while the current sprint is in production.</div>
+  </div>
+  <div class="fw-tile green">
+    <div class="fw-window">Weeks 5–10</div>
+    <div class="fw-action">Peak ROI window</div>
+    <div class="fw-desc">Maximum payoff on confirmed winners. The return on creative investment made 4–6 weeks prior.</div>
+  </div>
+</div><div class="sec"><h2>2 · Why 6 weeks is the right assessment window</h2><span>Based on historical winner data</span></div>
+<div class="why-box">
+  <div class="why-title">Winner identification timing · 312 Vitals winners</div>
+  <div class="why-stats">
+    <div class="wstat"><div class="wstat-val">15d</div>
+      <div class="wstat-lbl">Median days to winner confirmation (≥£3,000)</div></div>
+    <div class="wstat"><div class="wstat-val">7d</div>
+      <div class="wstat-lbl">Median days to first £900 — early signal point</div></div>
+    <div class="wstat"><div class="wstat-val">85%</div>
+      <div class="wstat-lbl">of winners confirmed within 30 days of launch</div></div>
+    <div class="wstat"><div class="wstat-val">49%</div>
+      <div class="wstat-lbl">confirmed by day 14 — half visible in one sprint</div></div>
+  </div>
+  <div class="chart-wrap" style="height:110px">
+    <canvas id="distChart" role="img" aria-label="Distribution of days to winner confirmation">Winner confirmation timing distribution.</canvas>
+  </div>
+  <div class="lc-divider"></div>
+  <div class="lc-headline">Identification is just the start — 45% of a winner's lifetime spend comes after day 30</div>
+  <div class="lc-sub">Average spend profile across 195 Vitals winners with ≥£5,000 lifetime spend.</div>
+  <div class="lc-tiles">
+    <div class="lc-tile identify">
+      <div class="lc-val">26%</div>
+      <div class="lc-lbl">Days 0–14</div>
+      <div class="lc-sub2">Avg £3,884 · signal emerging</div>
+    </div>
+    <div class="lc-tile confirm">
+      <div class="lc-val">29%</div>
+      <div class="lc-lbl">Days 14–30</div>
+      <div class="lc-sub2">Avg £4,264 · winner confirmed</div>
+    </div>
+    <div class="lc-tile scale">
+      <div class="lc-val">45%</div>
+      <div class="lc-lbl">Day 30+</div>
+      <div class="lc-sub2">Avg £6,593 · peak ROI window</div>
+    </div>
+  </div>
+  <div class="chart-wrap" style="height:120px">
+    <canvas id="lcChart" role="img" aria-label="Average spend per winner by week from launch">Lifecycle spend profile.</canvas>
+  </div>
+  <div class="why-note">An ad identified as a winner at day 15 still has 6–9 weeks of prime scaling ahead — 45% of its lifetime value. Identifying late doesn't just miss a metric: it directly costs scaling budget.</div>
+</div><div class="sec"><h2>3 · Sprint-by-sprint breakdown</h2><span>Vitals ads only · winner = ≥£3,000 spend in first 30 days</span></div>
+<div class="sprint-block pre-block">
+  <div class="sprint-hdr">
+    <div>
+      <span class="sprint-name muted">Pre-sprint baseline</span>
+      <span style="font-size:10px;color:var(--ink3);margin-left:8px">Sep–Oct 2025 · normalised to 2-week equivalent</span>
+    </div>
+  </div>
+  <div style="font-size:11px;color:var(--ink2);margin-bottom:10px;line-height:1.6">Steady-state pre-peak. Includes peak Oct. Treat as optimistic benchmark.</div>
+  <div class="pre-windows">
+    <div class="pre-win-card"><div class="pre-win-label">Avg ads per 2-week window</div>
+      <div class="pre-win-stat">~139</div><div class="pre-win-sub">total 604</div></div>
+    <div class="pre-win-card"><div class="pre-win-label">Avg spend per 2-week window</div>
+      <div class="pre-win-stat">£207K</div><div class="pre-win-sub">total £902K</div></div>
+    <div class="pre-win-card"><div class="pre-win-label">Avg winners per 2-week window</div>
+      <div class="pre-win-stat">~12.6</div><div class="pre-win-sub">total 55</div></div>
+    <div class="pre-win-card"><div class="pre-win-label">Hit rate</div>
+      <div class="pre-win-stat">9.1%</div><div class="pre-win-sub">winners ÷ ads launched</div></div>
+    <div class="pre-win-card"><div class="pre-win-label">Blended CPA</div>
+      <div class="pre-win-stat">£95</div><div class="pre-win-sub">steady-state benchmark</div></div>
+  </div>
+</div>
+<div class="sprint-block">
+  <div class="sprint-hdr">
+    <div><span class="sprint-name">Sprint 1</span></div>
+    <div class="sprint-dates">Wed 18 Feb → Wed 18 Mar · 4 weeks</div>
+  </div>
+  <div style="margin-bottom:10px"><span class="pill">Old creative strat (exited) → new CS joined mid-sprint (16 Mar)</span></div>
+  <div class="sprint-stats">
+    <div class="sstat"><div class="sstat-val">415</div><div class="sstat-lbl">ads launched</div></div>
+    <div class="sstat"><div class="sstat-val">£304K</div><div class="sstat-lbl">spend</div></div>
+    <div class="sstat"><div class="sstat-val">20</div><div class="sstat-lbl">winners (≥£3,000)</div></div>
+    <div class="sstat"><div class="sstat-val">4.8%</div><div class="sstat-lbl">hit rate</div></div>
+    <div class="sstat"><div class="sstat-val">£118</div><div class="sstat-lbl">blended CPA</div></div>
+  </div>
+  
+  <div class="assess-box done">
+    <div class="assess-lbl">Full assessment complete · 30d window closed</div>
+    <div class="assess-meta">Sprint length + 30 days = 8.3 wks from start · 20 confirmed winners · figures are final</div>
+  </div>
+</div>
+<div class="sprint-block gap-block">
+  <div class="sprint-hdr">
+    <span class="sprint-name muted">Gap — CS onboarding</span>
+    <div class="sprint-dates">Thu 19 Mar → Tue 31 Mar · 13 days</div>
+  </div>
+  <div class="gap-note">New CS onboarding. Existing campaigns running — not new sprint output. 159 ads launched — existing campaigns running. 6 winners at £131 CPA.</div>
+</div>
+<div class="sprint-block">
+  <div class="sprint-hdr">
+    <div><span class="sprint-name">Sprint 2</span><span class="badge badge-amber">window open</span></div>
+    <div class="sprint-dates">Wed 1 Apr → Tue 14 Apr · 2 weeks</div>
+  </div>
+  <div style="margin-bottom:10px"><span class="pill">Included Easter — fewer working days on content</span></div>
+  <div class="sprint-stats">
+    <div class="sstat"><div class="sstat-val">223</div><div class="sstat-lbl">ads launched</div></div>
+    <div class="sstat"><div class="sstat-val">£116K</div><div class="sstat-lbl">spend</div></div>
+    <div class="sstat"><div class="sstat-val">9</div><div class="sstat-lbl">winners (≥£3,000)</div></div>
+    <div class="sstat"><div class="sstat-val">4.0%</div><div class="sstat-lbl">hit rate</div></div>
+    <div class="sstat"><div class="sstat-val">£102</div><div class="sstat-lbl">blended CPA</div></div>
+  </div>
+  
+  <div style="font-size:11px;font-weight:500;color:var(--ink2);margin-bottom:8px">Winner pipeline · as of Apr 26</div>
+  <div class="pipeline-row">
+    <div class="pipe-card confirmed"><div class="pipe-val">9</div>
+      <div class="pipe-lbl">Confirmed</div><div class="pipe-sub">≥£3,000 spend</div></div>
+    <div class="pipe-card near-strong"><div class="pipe-val">16</div>
+      <div class="pipe-lbl">Near · good CPA</div><div class="pipe-sub">approaching threshold · CPA on track</div></div>
+    <div class="pipe-card near-weak"><div class="pipe-val">7</div>
+      <div class="pipe-lbl">Near · high CPA</div><div class="pipe-sub">approaching threshold · CPA concern</div></div>
+    <div class="pipe-card cold"><div class="pipe-val">191</div>
+      <div class="pipe-lbl">Not scaling</div><div class="pipe-sub">low spend · unlikely to move</div></div>
+  </div>
+  <div class="assess-box partial">
+    <div class="assess-lbl">Full assessment complete: ~14 May · 6 wks from sprint start</div>
+    <div class="assess-meta">16 near-winners with good CPA still in window · realistic final count 11–25 winners · CPA £102</div>
+  </div>
+</div>
+<div class="sprint-block">
+  <div class="sprint-hdr">
+    <div><span class="sprint-name">Sprint 3</span><span class="badge badge-gray">too early to assess</span></div>
+    <div class="sprint-dates">Wed 15 Apr → Tue 28 Apr · 2 weeks</div>
+  </div>
+  
+  <div class="sprint-stats">
+    <div class="sstat"><div class="sstat-val">141</div><div class="sstat-lbl">ads launched</div></div>
+    <div class="sstat"><div class="sstat-val">£31K</div><div class="sstat-lbl">spend</div></div>
+    <div class="sstat"><div class="sstat-val">1</div><div class="sstat-lbl">winners (≥£3,000)</div></div>
+    <div class="sstat"><div class="sstat-val">0.7%</div><div class="sstat-lbl">hit rate</div></div>
+    <div class="sstat"><div class="sstat-val">£132</div><div class="sstat-lbl">blended CPA</div></div>
+  </div>
+  
+  <div class="assess-box pending">
+    <div class="assess-lbl">Full assessment complete: ~28 May · 6 wks from sprint start</div>
+    <div class="assess-meta">Most ads only days old · current 0.7% hit rate not yet meaningful · first real read ~mid-May</div>
+  </div>
+</div>
+<div class="sprint-block">
+  <div class="sprint-hdr">
+    <div><span class="sprint-name">Sprint 4</span><span class="badge badge-gray">no data yet</span></div>
+    <div class="sprint-dates">Wed 29 Apr → Tue 12 May · 2 weeks</div>
+  </div>
+  <div class="assess-box early">
+    <div class="assess-lbl">Full assessment complete: ~mid-June · sprint length + 30 days = 6 wks from start</div>
+    <div class="assess-meta">Data window not yet open</div>
+  </div>
+</div><div class="sec"><h2>4 · Weekly ad launches</h2><span>Vitals unique ads by creation date · 2026</span></div>
+<div class="card">
+  <div class="chart-wrap" style="height:220px">
+    <canvas id="launchChart" role="img" aria-label="Weekly Vitals ad launches 2026 by sprint period">Weekly Vitals ad launches.</canvas>
+  </div>
+  <div class="launch-legend">
+    <span class="leg-item"><span class="leg-sq" style="background:#888780"></span>Pre-sprint</span>
+    <span class="leg-item"><span class="leg-sq" style="background:#378ADD"></span>Sprint 1 (18 Feb–18 Mar)</span>
+    <span class="leg-item"><span class="leg-sq" style="background:#5a5a52;outline:1px dashed #888780;outline-offset:1px"></span>Gap (19–31 Mar)</span>
+    <span class="leg-item"><span class="leg-sq" style="background:#639922"></span>Sprint 2 (1–14 Apr)</span>
+    <span class="leg-item"><span class="leg-sq" style="background:#EF9F27"></span>Sprint 3 (15–28 Apr)</span>
+    <span class="leg-item"><span class="leg-sq" style="background:#D85A30"></span>Sprint 4 (29 Apr+)</span>
+    <span class="leg-item"><span class="leg-line"></span>New CS joined 16 Mar</span>
+  </div>
+</div>
+<div class="footer"><span>Heights · Meta UK · Vitals · Internal · Apr 2026</span><span>Winner ≥£3,000 in first 30 days · ad-level Meta data</span></div>
+<script>
+const TT={backgroundColor:'rgba(13,17,23,.95)',titleColor:'#f0ede8',
+  bodyColor:'rgba(240,237,232,.65)',borderColor:'rgba(255,255,255,.12)',
+  borderWidth:1,padding:10,cornerRadius:4};
+const GC='rgba(255,255,255,.06)';
+const TC='rgba(240,237,232,.3)';
+
+new Chart(document.getElementById('distChart'),{
+  type:'bar',
+  data:{
+    labels:['Days 0–7','Days 8–14','Days 15–21','Days 22–30','Days 31–45','Days 46–60'],
+    datasets:[{data:[15, 34, 21, 15, 13, 2],
+      backgroundColor:['#378ADD','#378ADD','#639922','#639922',
+        'rgba(180,178,169,.35)','rgba(180,178,169,.35)'],
+      borderRadius:3,borderSkipped:false}]
+  },
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{...TT,callbacks:{label:ctx=>ctx.raw+'% of winners'}},
+      annotation:{annotations:{
+        d30:{type:'line',xMin:3.5,xMax:3.5,
+          borderColor:'rgba(226,75,74,.6)',borderWidth:1.5,borderDash:[4,3],
+          label:{display:true,content:'30d cut-off · 85% captured',
+            position:'end',yAdjust:-8,backgroundColor:'transparent',
+            color:'#E24B4A',font:{size:10,family:'DM Sans'}}}}}
+    },
+    scales:{
+      x:{ticks:{font:{size:10,family:'DM Sans'},color:TC},grid:{display:false},border:{display:false}},
+      y:{ticks:{font:{size:10,family:'DM Sans'},color:TC,callback:v=>v+'%'},
+        grid:{color:GC},border:{display:false},max:40}
+    }
+  }
+});
+
+new Chart(document.getElementById('lcChart'),{
+  type:'bar',
+  data:{
+    labels:['W1\nd0–7','W2\nd7–14','W3\nd14–21','W4\nd21–30',
+      'W5–6\nd30–42','W7–8\nd42–56','W9–10\nd56–70','W11–12\nd70–84'],
+    datasets:[{
+      data:[1592, 2291, 2121, 2143, 1964, 1440, 926, 618],
+      backgroundColor:['rgba(55,138,221,.45)','rgba(55,138,221,.45)',
+        'rgba(55,138,221,.45)','rgba(55,138,221,.45)',
+        'rgba(239,159,39,.55)','rgba(239,159,39,.45)',
+        'rgba(180,178,169,.3)','rgba(180,178,169,.25)'],
+      borderRadius:3,borderSkipped:false
+    }]
+  },
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{...TT,callbacks:{label:ctx=>'£'+ctx.raw.toLocaleString()+' avg spend in band'}},
+      annotation:{annotations:{
+        id30:{type:'line',xMin:3.5,xMax:3.5,
+          borderColor:'rgba(226,75,74,.6)',borderWidth:1.5,borderDash:[4,3],
+          label:{display:true,content:'Winner identified',position:'start',yAdjust:-8,
+            backgroundColor:'transparent',color:'#E24B4A',font:{size:10,family:'DM Sans'}}}}}
+    },
+    scales:{
+      x:{ticks:{font:{size:9,family:'DM Sans'},color:TC},grid:{display:false},border:{display:false}},
+      y:{ticks:{font:{size:10,family:'DM Sans'},color:TC,callback:v=>'£'+v.toLocaleString()},
+        grid:{color:GC},border:{display:false}}
+    }
+  }
+});
+
+new Chart(document.getElementById('launchChart'),{
+  type:'bar',
+  data:{
+    labels:["Dec 29", "Jan 05", "Jan 12", "Jan 19", "Jan 26", "Feb 02", "Feb 09", "Feb 16", "Feb 23", "Mar 02", "Mar 09", "Mar 16", "Mar 23", "Mar 30", "Apr 06", "Apr 13", "Apr 20"],
+    datasets:[{
+      data:[45, 214, 18, 57, 8, 134, 118, 49, 137, 71, 92, 99, 99, 92, 85, 154, 88],
+      backgroundColor:["#888780", "#888780", "#888780", "#888780", "#888780", "#888780", "#888780", "#888780", "#378ADD", "#378ADD", "#378ADD", "#378ADD", "#5a5a52", "#5a5a52", "#639922", "#639922", "#EF9F27"],
+      borderRadius:3,borderSkipped:false
+    }]
+  },
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{...TT,callbacks:{label:ctx=>ctx.raw+' new ads'}},
+      annotation:{annotations:{
+                line_s1: {type:'line',xMin:7.5,xMax:7.5,
+          borderColor:'#378ADD80',borderWidth:1,borderDash:[3,3],
+          label:{display:true,content:'S1',position:'start',yAdjust:6,
+            backgroundColor:'transparent',color:'#378ADD',font:{size:9,family:'DM Sans'}}},
+        line_gap: {type:'line',xMin:11.5,xMax:11.5,
+          borderColor:'#5a5a5280',borderWidth:1,borderDash:[3,3],
+          label:{display:true,content:'',position:'start',yAdjust:6,
+            backgroundColor:'transparent',color:'#5a5a52',font:{size:9,family:'DM Sans'}}},
+        line_s2: {type:'line',xMin:13.5,xMax:13.5,
+          borderColor:'#63992280',borderWidth:1,borderDash:[3,3],
+          label:{display:true,content:'S2',position:'start',yAdjust:6,
+            backgroundColor:'transparent',color:'#639922',font:{size:9,family:'DM Sans'}}},
+        line_s3: {type:'line',xMin:15.5,xMax:15.5,
+          borderColor:'#EF9F2780',borderWidth:1,borderDash:[3,3],
+          label:{display:true,content:'S3',position:'start',yAdjust:6,
+            backgroundColor:'transparent',color:'#EF9F27',font:{size:9,family:'DM Sans'}}}
+      }}
+    },
+    scales:{
+      x:{ticks:{font:{size:10,family:'DM Sans'},color:TC,maxRotation:45,autoSkip:false},
+        grid:{display:false},border:{display:false}},
+      y:{ticks:{font:{size:10,family:'DM Sans'},color:TC},
+        grid:{color:GC},border:{display:false}}
+    }
+  }
+});
+</script>
+</body>
+</html>
