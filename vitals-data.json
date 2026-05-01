@@ -49,7 +49,7 @@
         "hit_rate": 4.1,
         "scalers": 6,
         "scalers_norm": 2.9,
-        "scalers_complete": false,
+        "scalers_complete": true,
         "scaler_bar": 6000,
         "cpa": 120,
         "near_good": 9,
@@ -154,6 +154,50 @@
           "days": 62
         }
       ],
+      "scalers_list": [
+        {
+          "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
+          "spend": 31071,
+          "spend_6w": 21127,
+          "cpa": 99,
+          "days": 51
+        },
+        {
+          "name": "Hambi · CM3 · ITERATION: Iteration_[01/01]_[VITALs+mag]_[Burnout]",
+          "spend": 22218,
+          "spend_6w": 18353,
+          "cpa": 72,
+          "days": 65
+        },
+        {
+          "name": "Affiliate Whitelisting · Vitals⁺ · Product imagery, Customer quote",
+          "spend": 17804,
+          "spend_6w": 12239,
+          "cpa": 108,
+          "days": 58
+        },
+        {
+          "name": "Hambi · CM2 · ITERATION: Iteration_[3/2]_[Vitals]_[TT Spencer Mathews Reaction]",
+          "spend": 15462,
+          "spend_6w": 13789,
+          "cpa": 115,
+          "days": 52
+        },
+        {
+          "name": "Carol Lofi “Feeling your best self” - Vitals · Vitals⁺ · Talking to Camera, B-ro",
+          "spend": 10275,
+          "spend_6w": 9442,
+          "cpa": 95,
+          "days": 39
+        },
+        {
+          "name": "Ambassador mash up - proof stack · V3 Hook 2 · Vitals⁺ + Magnesium⁺ + Sleep Mask",
+          "spend": 7183,
+          "spend_6w": 7183,
+          "cpa": 126,
+          "days": 57
+        }
+      ],
       "assess_date": "17 Apr",
       "assess_wks": "8.3 wks"
     },
@@ -183,7 +227,8 @@
         "near_weak": 4,
         "cold": 129
       },
-      "winners_list": []
+      "winners_list": [],
+      "scalers_list": []
     },
     {
       "id": "s2",
@@ -321,6 +366,50 @@
           "days": 12
         }
       ],
+      "scalers_list": [
+        {
+          "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
+          "spend": 17072,
+          "spend_6w": 17072,
+          "cpa": 101,
+          "days": 16
+        },
+        {
+          "name": "Ambassador Mashup - Sleep · Hook v1 · Vitals⁺, Magnesium⁺",
+          "spend": 9370,
+          "spend_6w": 9370,
+          "cpa": 102,
+          "days": 25
+        },
+        {
+          "name": "Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
+          "spend": 8493,
+          "spend_6w": 8493,
+          "cpa": 113,
+          "days": 16
+        },
+        {
+          "name": "Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
+          "spend": 7681,
+          "spend_6w": 7681,
+          "cpa": 95,
+          "days": 12
+        },
+        {
+          "name": "Rylan - Rylan & Dan Podcast · Dan Focus - Hook 2 · Vitals⁺",
+          "spend": 6474,
+          "spend_6w": 6474,
+          "cpa": 116,
+          "days": 18
+        },
+        {
+          "name": "Vitals · Burnt Out Pro · Still Tired AM · Internal · New Concept · V1-01",
+          "spend": 6223,
+          "spend_6w": 6223,
+          "cpa": 132,
+          "days": 23
+        }
+      ],
       "assess_date": "14 May",
       "assess_wks": "6.1 wks"
     },
@@ -376,6 +465,15 @@
           "days": 9
         }
       ],
+      "scalers_list": [
+        {
+          "name": "Free Mag · Burnt Out Pro · More Energy · Internal · Iteration · V1-02",
+          "spend": 7882,
+          "spend_6w": 7882,
+          "cpa": 78,
+          "days": 8
+        }
+      ],
       "assess_date": "28 May",
       "assess_wks": "6.1 wks"
     },
@@ -398,7 +496,7 @@
         "hit_rate": 0.0,
         "scalers": 0,
         "scalers_norm": 0.0,
-        "scalers_complete": true,
+        "scalers_complete": false,
         "scaler_bar": 6000,
         "cpa": 200,
         "near_good": 0,
@@ -406,6 +504,7 @@
         "cold": 3
       },
       "winners_list": [],
+      "scalers_list": [],
       "assess_date": "11 Jun",
       "assess_wks": "6.1 wks"
     }
