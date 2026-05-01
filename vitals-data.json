@@ -4,160 +4,137 @@
     {
       "id": "baseline",
       "label": "Pre-sprint baseline",
-      "sublabel": "Sep\u2013Oct 2025 \u00b7 normalised to 2-week equivalent",
+      "sublabel": "Sep–Oct 2025 · normalised to 2-week equivalent",
+      "note": "Steady-state pre-peak. Treat as optimistic benchmark.",
+      "unit_days": 14,
       "start": "2025-09-01",
       "end": "2025-10-31",
       "days": 61,
-      "note": "Steady-state pre-peak. Treat as optimistic benchmark.",
       "unit": 14,
       "stats": {
-        "ads": 604,
-        "ads_norm": 139,
-        "spend": 902897,
-        "spend_norm": 207222,
-        "winners": 55,
-        "winners_norm": 12.6,
-        "hit_rate": 9.1,
-        "cpa": 95,
-        "near_good": 45,
-        "near_weak": 38,
-        "cold": 466
+        "ads": 568,
+        "ads_norm": 130.0,
+        "spend": 845080,
+        "spend_norm": 193953,
+        "winners": 35,
+        "winners_norm": 8.0,
+        "hit_rate": 6.2,
+        "cpa": 96,
+        "near_good": 37,
+        "near_weak": 28,
+        "cold": 468
       },
       "winners_list": []
     },
     {
       "id": "s1",
       "label": "Sprint 1",
-      "sublabel": "Wed 18 Feb \u2192 Wed 18 Mar \u00b7 4 weeks",
+      "sublabel": "Wed 18 Feb → Wed 18 Mar · 4 weeks",
       "start": "2026-02-18",
       "end": "2026-03-18",
-      "days": 28,
-      "note": "Old creative strat (exited) \u2192 new CS joined mid-sprint (16 Mar)",
+      "days": 29,
+      "note": "Old creative strat (exited) → new CS joined mid-sprint (16 Mar)",
       "unit": 14,
       "stats": {
-        "ads": 415,
-        "ads_norm": 208,
-        "spend": 304013,
-        "spend_norm": 152006,
-        "winners": 20,
-        "winners_norm": 10.0,
-        "hit_rate": 4.8,
-        "cpa": 118,
-        "near_good": 12,
-        "near_weak": 18,
-        "cold": 365
+        "ads": 387,
+        "ads_norm": 187.0,
+        "spend": 292573,
+        "spend_norm": 141242,
+        "winners": 16,
+        "winners_norm": 7.7,
+        "hit_rate": 4.1,
+        "cpa": 120,
+        "near_good": 9,
+        "near_weak": 17,
+        "cold": 345
       },
       "winners_list": [
         {
-          "name": "Hambi \u00b7 CM5 \u00b7 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 28870,
+          "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
+          "spend": 31071,
           "cpa": 99,
           "days": 51
         },
         {
-          "name": "Hambi \u00b7 CM3 \u00b7 ITERATION: Iteration_[01/01]_[VITALs+mag]_[Burnout]",
-          "spend": 20752,
+          "name": "Hambi · CM3 · ITERATION: Iteration_[01/01]_[VITALs+mag]_[Burnout]",
+          "spend": 22218,
           "cpa": 72,
           "days": 65
         },
         {
-          "name": "Affiliate Whitelisting \u00b7 Vitals\u207a \u00b7 UGC, Product imagery, Customer quote",
-          "spend": 17071,
-          "cpa": 107,
-          "days": 59
+          "name": "Affiliate Whitelisting · Vitals⁺ · Product imagery, Customer quote",
+          "spend": 17804,
+          "cpa": 108,
+          "days": 58
         },
         {
-          "name": "Hambi \u00b7 CM2 \u00b7 ITERATION: Iteration_[3/2]_[Vitals]_[TT Spencer Mathews Reaction]",
-          "spend": 15087,
-          "cpa": 114,
-          "days": 53
+          "name": "Hambi · CM2 · ITERATION: Iteration_[3/2]_[Vitals]_[TT Spencer Mathews Reaction]",
+          "spend": 15462,
+          "cpa": 115,
+          "days": 52
         },
         {
-          "name": "Carol x Dan Library - Vitals \u00b7 Vitals\u207a \u00b7 Ambassador, Conversational",
-          "spend": 12835,
-          "cpa": 102,
+          "name": "Carol Lofi “Feeling your best self” - Vitals · Vitals⁺ · Talking to Camera, B-ro",
+          "spend": 10275,
+          "cpa": 95,
           "days": 39
         },
         {
-          "name": "Hambi \u00b7 CM5 \u00b7 HP NET NEW: [C3]_[Vitals]_[Founder Agree/Disagree]",
-          "spend": 9051,
-          "cpa": 146,
-          "days": 50
-        },
-        {
-          "name": "Carol Lofi \u201cFeeling your best self\u201d - Vitals \u00b7 Vitals\u207a \u00b7 UGC, Talking to Came...",
-          "spend": 8944,
-          "cpa": 93,
-          "days": 39
-        },
-        {
-          "name": "Ambassador mash up - proof stack \u00b7 V3 Hook 2 \u00b7 Vitals\u207a + Magnesium\u207a + Sleep Mask",
-          "spend": 7182,
+          "name": "Ambassador mash up - proof stack · V3 Hook 2 · Vitals⁺ + Magnesium⁺ + Sleep Mask",
+          "spend": 7183,
           "cpa": 126,
           "days": 57
         },
         {
-          "name": "Hambi \u00b7 CM5 \u00b7 DESIGN NET NEW: [C11]_[Vitals]_[Instagram Native Post]",
-          "spend": 6193,
-          "cpa": 107,
-          "days": 40
-        },
-        {
-          "name": "HM \u00b7 CM4 \u00b7 HP NET NEW: [C5]_[Vitals]_[Price objection handling podcast]",
+          "name": "HM · CM4 · HP NET NEW: [C5]_[Vitals]_[Price objection handling podcast]",
           "spend": 5764,
           "cpa": 96,
-          "days": 65
+          "days": 64
         },
         {
-          "name": "Organic Whitelisting \u00b7 Vitals\u207a \u00b7 Personal story",
+          "name": "Cortisol · Vitals⁺",
+          "spend": 5362,
+          "cpa": 112,
+          "days": 39
+        },
+        {
+          "name": "Organic Whitelisting · Vitals⁺ · Personal story",
           "spend": 4950,
           "cpa": 137,
           "days": 58
         },
         {
-          "name": "Cortisol \u00b7 Vitals\u207a \u00b7 4.26 - Copy",
-          "spend": 4880,
-          "cpa": 108,
-          "days": 39
-        },
-        {
-          "name": "Heights_HM_HP_C6_H2 \u00b7 03/06/2026",
-          "spend": 4237,
-          "cpa": 132,
+          "name": "Heights_HM_HP_C6_H2 · 03/06/2026",
+          "spend": 4254,
+          "cpa": 133,
           "days": 51
         },
         {
-          "name": "Organic Whitelisting \u00b7 Vitals\u207a \u00b7 10-20s",
-          "spend": 4013,
+          "name": "Organic Whitelisting · Vitals⁺ · 10-20s",
+          "spend": 4035,
           "cpa": 115,
           "days": 58
         },
         {
-          "name": "HM \u00b7 CM4 \u00b7 UGC NET NEW: [C1]_[Vitals]_[Whiteboard Expert Timeline] - Joe",
+          "name": "HM · CM4 · UGC NET NEW: [C1]_[Vitals]_[Whiteboard Expert Timeline] - Joe",
           "spend": 3869,
           "cpa": 133,
           "days": 60
         },
         {
-          "name": "HM \u00b7 CM4 \u00b7 UGC NET NEW: [C1]_[Vitals]_[Whiteboard Expert Timeline] - Joe",
+          "name": "HM · CM4 · UGC NET NEW: [C1]_[Vitals]_[Whiteboard Expert Timeline] - Joe",
           "spend": 3807,
           "cpa": 136,
           "days": 60
         },
         {
-          "name": "Hambi \u00b7 CM4 \u00b7 ITERATION: Iteration_[02/10]_[Vitals]_[Jake Humphrey Ad]",
-          "spend": 3739,
-          "cpa": 101,
-          "days": 65
-        },
-        {
-          "name": "Hambi \u00b7 CM5 \u00b7 UGC NET NEW: [C2]_[Vitals]_[Listicles 3 Reasons]",
+          "name": "Hambi · CM5 · UGC NET NEW: [C2]_[Vitals]_[Listicles 3 Reasons]",
           "spend": 3681,
           "cpa": 142,
           "days": 51
         },
         {
-          "name": "Dan VSL - Dan Story - Ultimate Podcast Mashup \u00b7 Hook 3 \u00b7 Vitals\u207a",
+          "name": "Dan VSL - Dan Story - Ultimate Podcast Mashup · Hook 3 · Vitals⁺",
           "spend": 3447,
           "cpa": 164,
           "days": 46
@@ -174,104 +151,158 @@
     },
     {
       "id": "gap",
-      "label": "Gap \u2014 CS onboarding",
-      "sublabel": "Thu 19 Mar \u2192 Tue 31 Mar \u00b7 13 days",
+      "label": "Gap — CS onboarding",
+      "sublabel": "Thu 19 Mar → Tue 31 Mar · 13 days",
       "start": "2026-03-19",
       "end": "2026-03-31",
       "days": 13,
-      "note": "New CS onboarding. Existing campaigns running \u2014 not new sprint output.",
+      "note": "New CS onboarding. Existing campaigns running — not new sprint output.",
       "unit": 14,
       "stats": {
-        "ads": 159,
-        "ads_norm": 171,
-        "spend": 84791,
-        "spend_norm": 91314,
-        "winners": 6,
-        "winners_norm": 6.5,
-        "hit_rate": 3.8,
-        "cpa": 131,
-        "near_good": 1,
-        "near_weak": 8,
-        "cold": 144
+        "ads": 139,
+        "ads_norm": 150.0,
+        "spend": 93802,
+        "spend_norm": 101018,
+        "winners": 4,
+        "winners_norm": 4.3,
+        "hit_rate": 2.9,
+        "cpa": 124,
+        "near_good": 2,
+        "near_weak": 4,
+        "cold": 129
       },
       "winners_list": []
     },
     {
       "id": "s2",
       "label": "Sprint 2",
-      "sublabel": "Wed 1 Apr \u2192 Tue 14 Apr \u00b7 2 weeks",
+      "sublabel": "Wed 1 Apr → Tue 14 Apr · 2 weeks",
       "start": "2026-04-01",
       "end": "2026-04-14",
       "days": 14,
-      "note": "Included Easter \u2014 fewer working days on content",
+      "note": "Included Easter — fewer working days on content",
       "unit": 14,
       "stats": {
-        "ads": 223,
-        "ads_norm": 223,
-        "spend": 116726,
-        "spend_norm": 116726,
-        "winners": 9,
-        "winners_norm": 9.0,
-        "hit_rate": 4.0,
-        "cpa": 102,
-        "near_good": 16,
-        "near_weak": 7,
-        "cold": 191
+        "ads": 265,
+        "ads_norm": 265.0,
+        "spend": 173986,
+        "spend_norm": 173986,
+        "winners": 18,
+        "winners_norm": 18.0,
+        "hit_rate": 6.8,
+        "cpa": 106,
+        "near_good": 13,
+        "near_weak": 10,
+        "cold": 224
       },
       "winners_list": [
         {
-          "name": "Hambi \u00b7 CM5 \u00b7 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 14702,
-          "cpa": 105,
+          "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
+          "spend": 17072,
+          "cpa": 101,
           "days": 16
         },
         {
-          "name": "Vitals \u00b7 Burnt Out Pro \u00b7 Can't Focus \u00b7 Internal \u00b7 Iteration \u00b7 V1-02",
-          "spend": 6523,
+          "name": "Ambassador Mashup - Sleep · Hook v1 · Vitals⁺, Magnesium⁺",
+          "spend": 9370,
           "cpa": 102,
+          "days": 25
+        },
+        {
+          "name": "Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
+          "spend": 8493,
+          "cpa": 113,
           "days": 16
         },
         {
-          "name": "Vitals \u00b7 Burnt Out Pro \u00b7 Can't Focus \u00b7 Internal \u00b7 Iteration \u00b7 V1-02",
-          "spend": 6396,
-          "cpa": 97,
+          "name": "Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
+          "spend": 7681,
+          "cpa": 95,
           "days": 12
         },
         {
-          "name": "Vitals \u00b7 Burnt Out Pro \u00b7 Still Tired AM \u00b7 Internal \u00b7 New Concept \u00b7 V1-01",
-          "spend": 6223,
-          "cpa": 132,
-          "days": 24
-        },
-        {
-          "name": "Rylan - Rylan & Dan Podcast \u00b7 Dan Focus - Hook 2 \u00b7 Vitals\u207a",
-          "spend": 6171,
+          "name": "Rylan - Rylan & Dan Podcast · Dan Focus - Hook 2 · Vitals⁺",
+          "spend": 6474,
           "cpa": 116,
           "days": 18
         },
         {
-          "name": "Free Mag \u00b7 Burnt Out Pro \u00b7 Can't Focus \u00b7 Hambi \u00b7 New Concept \u00b7 V1-02",
-          "spend": 4365,
-          "cpa": 66,
+          "name": "Vitals · Burnt Out Pro · Still Tired AM · Internal · New Concept · V1-01",
+          "spend": 6223,
+          "cpa": 132,
+          "days": 23
+        },
+        {
+          "name": "Ambassador Energy Mashup · More subtle · Vitals⁺",
+          "spend": 5387,
+          "cpa": 93,
+          "days": 18
+        },
+        {
+          "name": "Free Mag · Burnt Out Pro · Can't Focus · Hambi · New Concept · V1-02",
+          "spend": 5183,
+          "cpa": 64,
           "days": 12
         },
         {
-          "name": "Free Mag \u00b7 Hambi \u00b7 Iteration",
-          "spend": 3941,
+          "name": "Ambassador Mashup - Sleep · Hook v1 · Vitals⁺, Magnesium⁺",
+          "spend": 4777,
+          "cpa": 126,
+          "days": 25
+        },
+        {
+          "name": "Free Mag · Burnt Out Pro · toomanysupps · Hambi · New Concept · V1-02",
+          "spend": 4603,
+          "cpa": 70,
+          "days": 12
+        },
+        {
+          "name": "Free Mag · Hambi · Iteration",
+          "spend": 4573,
           "cpa": 59,
           "days": 20
         },
         {
-          "name": "Ambassador Energy Mashup \u00b7 More subtle \u00b7 Vitals\u207a",
-          "spend": 3559,
-          "cpa": 91,
+          "name": "Ben Shephard - Launch Assets · Fit for Life - Hook 3- Long · Vitals⁺",
+          "spend": 4136,
+          "cpa": 77,
           "days": 18
         },
         {
-          "name": "Ambassador Mashup - Scepticism \u00b7 Hook v2 \u00b7 Vitals\u207a",
-          "spend": 3475,
-          "cpa": 124,
+          "name": "Ambassador Mashup - Scepticism · Hook v2 · Vitals⁺",
+          "spend": 3940,
+          "cpa": 116,
           "days": 18
+        },
+        {
+          "name": "Vitals · Still Tired AM · paidinfluencer · PERIMENOPAUSE",
+          "spend": 3811,
+          "cpa": 119,
+          "days": 24
+        },
+        {
+          "name": "Free Mag · Burnt Out Pro · More Energy · Hambi · New Concept · V1-02",
+          "spend": 3758,
+          "cpa": 92,
+          "days": 12
+        },
+        {
+          "name": "Vitals · athlete · gymrecovery · Hambi · New Concept · V1-02",
+          "spend": 3688,
+          "cpa": 154,
+          "days": 12
+        },
+        {
+          "name": "Ben Shephard - Launch Assets · Family as Fuel - Hook 2 - Short · Vitals⁺",
+          "spend": 3381,
+          "cpa": 82,
+          "days": 17
+        },
+        {
+          "name": "Vitals · Supplement Sceptic · toomanysupps · Hambi · New Concept · V1-02",
+          "spend": 3088,
+          "cpa": 206,
+          "days": 12
         }
       ],
       "assess_date": "14 May",
@@ -280,31 +311,49 @@
     {
       "id": "s3",
       "label": "Sprint 3",
-      "sublabel": "Wed 15 Apr \u2192 Tue 28 Apr \u00b7 2 weeks",
+      "sublabel": "Wed 15 Apr → Tue 28 Apr · 2 weeks",
       "start": "2026-04-15",
       "end": "2026-04-28",
       "days": 14,
       "note": "",
       "unit": 14,
       "stats": {
-        "ads": 141,
-        "ads_norm": 141,
-        "spend": 31573,
-        "spend_norm": 31573,
-        "winners": 1,
-        "winners_norm": 1.0,
-        "hit_rate": 0.7,
-        "cpa": 132,
-        "near_good": 4,
-        "near_weak": 4,
-        "cold": 132
+        "ads": 188,
+        "ads_norm": 188.0,
+        "spend": 53278,
+        "spend_norm": 53278,
+        "winners": 4,
+        "winners_norm": 4.0,
+        "hit_rate": 2.1,
+        "cpa": 137,
+        "near_good": 1,
+        "near_weak": 6,
+        "cold": 177
       },
       "winners_list": [
         {
-          "name": "Free Mag \u00b7 Burnt Out Pro \u00b7 More Energy \u00b7 Internal \u00b7 Iteration \u00b7 V1-02",
-          "spend": 4925,
-          "cpa": 82,
+          "name": "Free Mag · Burnt Out Pro · More Energy · Internal · Iteration · V1-02",
+          "spend": 7882,
+          "cpa": 78,
           "days": 8
+        },
+        {
+          "name": "Ambassador Mashup - Sleep · Hook v1 · Vitals⁺, Magnesium⁺",
+          "spend": 4886,
+          "cpa": 114,
+          "days": 4
+        },
+        {
+          "name": "Vitals · founderhp · More Energy · Internal · Iteration · V1-02",
+          "spend": 4014,
+          "cpa": 154,
+          "days": 4
+        },
+        {
+          "name": "Vitals · Burnt Out Pro · 3pm Crash · Internal · New Concept · V1-02",
+          "spend": 3223,
+          "cpa": 134,
+          "days": 9
         }
       ],
       "assess_date": "28 May",
@@ -313,132 +362,144 @@
     {
       "id": "s4",
       "label": "Sprint 4",
-      "sublabel": "Wed 29 Apr \u2192 Tue 12 May \u00b7 2 weeks",
+      "sublabel": "Wed 29 Apr → Tue 12 May · 2 weeks",
       "start": "2026-04-29",
       "end": "2026-05-12",
       "days": 14,
       "note": "",
       "unit": 14,
-      "stats": null,
+      "stats": {
+        "ads": 3,
+        "ads_norm": 3.0,
+        "spend": 400,
+        "spend_norm": 400,
+        "winners": 0,
+        "winners_norm": 0.0,
+        "hit_rate": 0.0,
+        "cpa": 200,
+        "near_good": 0,
+        "near_weak": 0,
+        "cold": 3
+      },
       "winners_list": [],
       "assess_date": "11 Jun",
       "assess_wks": "6.1 wks"
     }
   ],
   "timing": {
-    "total_winners": 312,
-    "median_early": 7,
-    "median_win": 15,
-    "pct_d14": 49,
+    "total_winners": 320,
+    "median_early": 5,
+    "median_win": 14,
+    "pct_d14": 52,
     "pct_d30": 85,
     "dist": [
-      15,
-      34,
       21,
-      15,
+      32,
+      20,
       13,
+      9,
       2
     ],
     "threshold": 3000,
     "early_threshold": 900
   },
   "lifecycle": {
-    "n_winners": 195,
+    "n_winners": 199,
     "floor": 5000,
-    "total_avg": 14740,
-    "pre30_pct": 55,
-    "post30_pct": 45,
+    "total_avg": 14762,
+    "pre30_pct": 57,
+    "post30_pct": 43,
     "band_avgs": [
-      1592,
-      2291,
-      2121,
-      2143,
-      1964,
-      1440,
-      926,
-      618
+      1991,
+      2348,
+      2056,
+      2036,
+      1861,
+      1377,
+      914,
+      570
     ],
-    "d0_14_pct": 26,
-    "d14_30_pct": 29,
-    "d30plus_pct": 45,
-    "d0_14_avg": 3884,
-    "d14_30_avg": 4264,
-    "d30plus_avg": 6593
+    "d0_14_pct": 29,
+    "d14_30_pct": 28,
+    "d30plus_pct": 43,
+    "d0_14_avg": 4339,
+    "d14_30_avg": 4092,
+    "d30plus_avg": 6331
   },
   "chart": [
     {
       "label": "Dec 29",
-      "n": 45,
+      "n": 87,
       "bucket": "pre"
     },
     {
       "label": "Jan 05",
-      "n": 214,
+      "n": 195,
       "bucket": "pre"
     },
     {
       "label": "Jan 12",
-      "n": 18,
+      "n": 21,
       "bucket": "pre"
     },
     {
       "label": "Jan 19",
-      "n": 57,
+      "n": 55,
       "bucket": "pre"
     },
     {
       "label": "Jan 26",
-      "n": 8,
+      "n": 9,
       "bucket": "pre"
     },
     {
       "label": "Feb 02",
-      "n": 134,
+      "n": 132,
       "bucket": "pre"
     },
     {
       "label": "Feb 09",
-      "n": 118,
+      "n": 116,
       "bucket": "pre"
     },
     {
       "label": "Feb 16",
-      "n": 49,
+      "n": 50,
       "bucket": "pre"
     },
     {
       "label": "Feb 23",
-      "n": 137,
+      "n": 136,
       "bucket": "s1"
     },
     {
       "label": "Mar 02",
-      "n": 71,
+      "n": 69,
       "bucket": "s1"
     },
     {
       "label": "Mar 09",
-      "n": 92,
+      "n": 90,
       "bucket": "s1"
     },
     {
       "label": "Mar 16",
-      "n": 99,
+      "n": 94,
       "bucket": "s1"
     },
     {
       "label": "Mar 23",
-      "n": 99,
+      "n": 63,
       "bucket": "gap"
     },
     {
       "label": "Mar 30",
-      "n": 92,
+      "n": 128,
       "bucket": "gap"
     },
     {
       "label": "Apr 06",
-      "n": 85,
+      "n": 89,
       "bucket": "s2"
     },
     {
@@ -449,6 +510,11 @@
     {
       "label": "Apr 20",
       "n": 88,
+      "bucket": "s3"
+    },
+    {
+      "label": "Apr 27",
+      "n": 50,
       "bucket": "s3"
     }
   ]
