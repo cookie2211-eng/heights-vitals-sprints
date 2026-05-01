@@ -70,10 +70,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);
 .sprint-hdr{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px;}
 .sprint-name{font-size:14px;font-weight:500;color:var(--ink);}.sprint-name.muted{color:var(--ink2);}
 .sprint-dates{font-size:11px;color:var(--ink3);text-align:right;line-height:1.6;white-space:nowrap;}
-.sprint-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:12px;}
+.sprint-stats{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:12px;}
 .sstat{text-align:center;background:var(--bg2);border:1px solid var(--rule);border-radius:var(--radius);padding:8px 6px;}
 .sstat-val{font-size:16px;font-weight:500;color:var(--ink);}
 .sstat-lbl{font-size:9px;color:var(--ink3);margin-top:3px;line-height:1.3;}
+.sstat-prov{font-size:9px;color:var(--amber);margin-top:2px;font-style:italic;}
+.sstat.scaler{border-top:2px solid var(--green);}
+.sstat.scaler .sstat-val{color:var(--green);}
 .sstat.clickable{cursor:pointer;transition:background .15s;}
 .sstat.clickable:hover{background:var(--bg3);}
 .sstat.clickable .sstat-val{color:var(--blue);text-decoration:underline;text-underline-offset:2px;}
@@ -101,7 +104,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);
 .assess-box.done .assess-lbl{color:var(--green);}.assess-box.partial .assess-lbl{color:var(--amber);}
 .assess-box.pending .assess-lbl{color:var(--blue);}.assess-box.early .assess-lbl{color:var(--ink2);}
 .assess-meta{font-size:10px;color:var(--ink2);line-height:1.55;}
-.pre-windows{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:10px 0 6px;}
+.pre-windows{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:10px 0 6px;}
 .pre-win-card{background:var(--bg);border:1px solid var(--rule);border-radius:var(--radius);padding:10px 12px;}
 .pre-win-label{font-size:10px;color:var(--ink3);margin-bottom:5px;line-height:1.35;}
 .pre-win-stat{font-size:15px;font-weight:500;color:var(--ink);}
@@ -170,6 +173,7 @@ function render(DATA) {
     <h1>Vitals⁺ · Creative <em>Sprint Assessment</em></h1></div>
   <div class="page-hdr-r"><strong>Heights · Meta UK</strong><br>Data: Sep 2025 – 26 Apr 2026<br>
     Winner = ≥£3,000 spend in first 30 days<br>
+    Scaler = winner with ≥£6,000 by 6 weeks<br>
     <span class="si">Includes:</span> Vitals⁺ · Free Magnesium offer ads<br>
     <span class="so">Excludes:</span> Intro Bundle · standalone Magnesium⁺ · Biotic · Thrive</div>
 </div>
@@ -202,7 +206,7 @@ function render(DATA) {
   <div class="why-note">${lc_note}</div>
 </div>
 
-<div class="sec"><h2>3 · Sprint-by-sprint breakdown</h2><span>${prod_label} ads only · winner = ≥${fmt(T)} spend in first 30 days</span></div>
+<div class="sec"><h2>3 · Sprint-by-sprint breakdown</h2><span>${prod_label} · winner = ≥${fmt(T)} in first 30d · scaler = winner with ≥${fmt(T*2)} by 6w</span></div>
 `;
 
   let sprint_num = 0;
@@ -220,6 +224,7 @@ function render(DATA) {
     <div class="pre-win-card"><div class="pre-win-label">Avg spend per ${unit_label} window</div><div class="pre-win-stat">${fmtK(st.spend_norm)}</div><div class="pre-win-sub">total ${fmtK(st.spend)}</div></div>
     <div class="pre-win-card"><div class="pre-win-label">Avg winners per ${unit_label} window</div><div class="pre-win-stat">~${st.winners_norm}</div><div class="pre-win-sub">total ${st.winners}</div></div>
     <div class="pre-win-card"><div class="pre-win-label">Hit rate</div><div class="pre-win-stat">${st.hit_rate}%</div><div class="pre-win-sub">winners ÷ ads launched</div></div>
+    <div class="pre-win-card" style="border-top:2px solid var(--green)"><div class="pre-win-label">Scalers per ${unit_label} window</div><div class="pre-win-stat" style="color:var(--green)">~${st.scalers_norm}</div><div class="pre-win-sub">total ${st.scalers} · ≥${fmt(st.scaler_bar)} by 6w</div></div>
     <div class="pre-win-card"><div class="pre-win-label">Blended CPA</div><div class="pre-win-stat">${fmt(st.cpa)}</div><div class="pre-win-sub">steady-state benchmark</div></div>
   </div></div>`;
       return;
@@ -313,6 +318,7 @@ function render(DATA) {
     <div class="sstat"><div class="sstat-val">${fmtK(st.spend)}</div><div class="sstat-lbl">spend</div></div>
     ${winners_stat}
     <div class="sstat"><div class="sstat-val">${st.hit_rate}%</div><div class="sstat-lbl">hit rate</div></div>
+    <div class="sstat scaler"><div class="sstat-val">${st.scalers}</div><div class="sstat-lbl">scalers (≥${fmt(st.scaler_bar)} by 6w)</div>${st.scalers_complete ? '' : '<div class="sstat-prov">provisional</div>'}</div>
     <div class="sstat"><div class="sstat-val">${fmt(st.cpa)}</div><div class="sstat-lbl">blended CPA</div></div>
   </div>
   ${pipeline_html}
@@ -333,7 +339,7 @@ function render(DATA) {
   <div class="launch-legend">${LEGEND.map(l => `<span class="leg-item"><span class="${l.cls}" style="${l.style}"></span>${l.label}</span>`).join('')}</div>
 </div>
 <div class="footer"><span>Heights · Meta UK · Vitals · Internal · Apr 2026</span>
-  <span>Winner ≥£3,000 in first 30 days · ad-level Meta data · data from vitals-data.json</span></div>`;
+  <span>Winner ≥£3,000 in first 30d · Scaler ≥£6,000 by 6w · ad-level Meta data · vitals-data.json</span></div>`;
 
   document.getElementById('root').innerHTML = html;
   buildCharts(DATA);
