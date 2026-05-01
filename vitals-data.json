@@ -12,21 +12,21 @@
       "days": 61,
       "unit": 14,
       "stats": {
-        "ads": 568,
-        "ads_norm": 130.0,
-        "spend": 845080,
-        "spend_norm": 193953,
-        "winners": 35,
-        "winners_norm": 8.0,
-        "hit_rate": 6.2,
-        "scalers": 17,
-        "scalers_norm": 3.9,
+        "ads": 385,
+        "ads_norm": 88.0,
+        "spend": 381386,
+        "spend_norm": 87531,
+        "winners": 22,
+        "winners_norm": 5.0,
+        "hit_rate": 5.7,
+        "scalers": 7,
+        "scalers_norm": 1.6,
         "scalers_complete": true,
         "scaler_bar": 6000,
-        "cpa": 96,
-        "near_good": 37,
-        "near_weak": 28,
-        "cold": 468
+        "cpa": 106,
+        "near_good": 19,
+        "near_weak": 17,
+        "cold": 327
       },
       "winners_list": []
     },
@@ -40,118 +40,102 @@
       "note": "Old creative strat (exited) → new CS joined mid-sprint (16 Mar)",
       "unit": 14,
       "stats": {
-        "ads": 387,
-        "ads_norm": 187.0,
-        "spend": 292573,
-        "spend_norm": 141242,
-        "winners": 16,
-        "winners_norm": 7.7,
-        "hit_rate": 4.1,
-        "scalers": 6,
-        "scalers_norm": 2.9,
+        "ads": 191,
+        "ads_norm": 92.0,
+        "spend": 201801,
+        "spend_norm": 97421,
+        "winners": 10,
+        "winners_norm": 4.8,
+        "hit_rate": 5.2,
+        "scalers": 5,
+        "scalers_norm": 2.4,
         "scalers_complete": true,
         "scaler_bar": 6000,
-        "cpa": 120,
-        "near_good": 9,
-        "near_weak": 17,
-        "cold": 345
+        "cpa": 118,
+        "near_good": 4,
+        "near_weak": 9,
+        "cold": 168
       },
       "winners_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
           "spend": 31071,
           "cpa": 99,
-          "days": 51
+          "days": 51,
+          "first_spend": "Mar 06",
+          "sprint_day": 17
         },
         {
           "name": "Hambi · CM3 · ITERATION: Iteration_[01/01]_[VITALs+mag]_[Burnout]",
           "spend": 22218,
           "cpa": 72,
-          "days": 65
+          "days": 65,
+          "first_spend": "Feb 20",
+          "sprint_day": 3
         },
         {
           "name": "Affiliate Whitelisting · Vitals⁺ · Product imagery, Customer quote",
           "spend": 17804,
           "cpa": 108,
-          "days": 58
+          "days": 58,
+          "first_spend": "Feb 27",
+          "sprint_day": 10
         },
         {
           "name": "Hambi · CM2 · ITERATION: Iteration_[3/2]_[Vitals]_[TT Spencer Mathews Reaction]",
           "spend": 15462,
           "cpa": 115,
-          "days": 52
-        },
-        {
-          "name": "Carol Lofi “Feeling your best self” - Vitals · Vitals⁺ · Talking to Camera, B-ro",
-          "spend": 10275,
-          "cpa": 95,
-          "days": 39
+          "days": 52,
+          "first_spend": "Mar 05",
+          "sprint_day": 16
         },
         {
           "name": "Ambassador mash up - proof stack · V3 Hook 2 · Vitals⁺ + Magnesium⁺ + Sleep Mask",
           "spend": 7183,
           "cpa": 126,
-          "days": 57
-        },
-        {
-          "name": "HM · CM4 · HP NET NEW: [C5]_[Vitals]_[Price objection handling podcast]",
-          "spend": 5764,
-          "cpa": 96,
-          "days": 64
+          "days": 57,
+          "first_spend": "Feb 28",
+          "sprint_day": 11
         },
         {
           "name": "Cortisol · Vitals⁺",
           "spend": 5362,
           "cpa": 112,
-          "days": 39
+          "days": 39,
+          "first_spend": "Mar 18",
+          "sprint_day": 29
         },
         {
           "name": "Organic Whitelisting · Vitals⁺ · Personal story",
           "spend": 4950,
           "cpa": 137,
-          "days": 58
+          "days": 58,
+          "first_spend": "Feb 27",
+          "sprint_day": 10
         },
         {
           "name": "Heights_HM_HP_C6_H2 · 03/06/2026",
           "spend": 4254,
           "cpa": 133,
-          "days": 51
+          "days": 51,
+          "first_spend": "Mar 06",
+          "sprint_day": 17
         },
         {
           "name": "Organic Whitelisting · Vitals⁺ · 10-20s",
           "spend": 4035,
           "cpa": 115,
-          "days": 58
-        },
-        {
-          "name": "HM · CM4 · UGC NET NEW: [C1]_[Vitals]_[Whiteboard Expert Timeline] - Joe",
-          "spend": 3869,
-          "cpa": 133,
-          "days": 60
-        },
-        {
-          "name": "HM · CM4 · UGC NET NEW: [C1]_[Vitals]_[Whiteboard Expert Timeline] - Joe",
-          "spend": 3807,
-          "cpa": 136,
-          "days": 60
+          "days": 58,
+          "first_spend": "Feb 27",
+          "sprint_day": 10
         },
         {
           "name": "Hambi · CM5 · UGC NET NEW: [C2]_[Vitals]_[Listicles 3 Reasons]",
           "spend": 3681,
           "cpa": 142,
-          "days": 51
-        },
-        {
-          "name": "Dan VSL - Dan Story - Ultimate Podcast Mashup · Hook 3 · Vitals⁺",
-          "spend": 3447,
-          "cpa": 164,
-          "days": 46
-        },
-        {
-          "name": "Flexible Ad - L30 Winners",
-          "spend": 3221,
-          "cpa": 161,
-          "days": 62
+          "days": 51,
+          "first_spend": "Mar 06",
+          "sprint_day": 17
         }
       ],
       "scalers_list": [
@@ -160,42 +144,45 @@
           "spend": 31071,
           "spend_6w": 21127,
           "cpa": 99,
-          "days": 51
+          "days": 51,
+          "first_spend": "Mar 06",
+          "sprint_day": 17
         },
         {
           "name": "Hambi · CM3 · ITERATION: Iteration_[01/01]_[VITALs+mag]_[Burnout]",
           "spend": 22218,
           "spend_6w": 18353,
           "cpa": 72,
-          "days": 65
+          "days": 65,
+          "first_spend": "Feb 20",
+          "sprint_day": 3
         },
         {
           "name": "Affiliate Whitelisting · Vitals⁺ · Product imagery, Customer quote",
           "spend": 17804,
           "spend_6w": 12239,
           "cpa": 108,
-          "days": 58
+          "days": 58,
+          "first_spend": "Feb 27",
+          "sprint_day": 10
         },
         {
           "name": "Hambi · CM2 · ITERATION: Iteration_[3/2]_[Vitals]_[TT Spencer Mathews Reaction]",
           "spend": 15462,
           "spend_6w": 13789,
           "cpa": 115,
-          "days": 52
-        },
-        {
-          "name": "Carol Lofi “Feeling your best self” - Vitals · Vitals⁺ · Talking to Camera, B-ro",
-          "spend": 10275,
-          "spend_6w": 9442,
-          "cpa": 95,
-          "days": 39
+          "days": 52,
+          "first_spend": "Mar 05",
+          "sprint_day": 16
         },
         {
           "name": "Ambassador mash up - proof stack · V3 Hook 2 · Vitals⁺ + Magnesium⁺ + Sleep Mask",
           "spend": 7183,
           "spend_6w": 7183,
           "cpa": 126,
-          "days": 57
+          "days": 57,
+          "first_spend": "Feb 28",
+          "sprint_day": 11
         }
       ],
       "assess_date": "17 Apr",
@@ -211,21 +198,21 @@
       "note": "New CS onboarding. Existing campaigns running — not new sprint output.",
       "unit": 14,
       "stats": {
-        "ads": 139,
-        "ads_norm": 150.0,
-        "spend": 93802,
-        "spend_norm": 101018,
-        "winners": 4,
-        "winners_norm": 4.3,
-        "hit_rate": 2.9,
-        "scalers": 4,
-        "scalers_norm": 4.3,
+        "ads": 101,
+        "ads_norm": 109.0,
+        "spend": 30183,
+        "spend_norm": 32505,
+        "winners": 0,
+        "winners_norm": 0.0,
+        "hit_rate": 0.0,
+        "scalers": 0,
+        "scalers_norm": 0.0,
         "scalers_complete": false,
         "scaler_bar": 6000,
-        "cpa": 124,
-        "near_good": 2,
-        "near_weak": 4,
-        "cold": 129
+        "cpa": 190,
+        "near_good": 1,
+        "near_weak": 2,
+        "cold": 98
       },
       "winners_list": [],
       "scalers_list": []
@@ -240,174 +227,114 @@
       "note": "Included Easter — fewer working days on content",
       "unit": 14,
       "stats": {
-        "ads": 265,
-        "ads_norm": 265.0,
-        "spend": 173986,
-        "spend_norm": 173986,
-        "winners": 18,
-        "winners_norm": 18.0,
-        "hit_rate": 6.8,
-        "scalers": 6,
-        "scalers_norm": 6.0,
+        "ads": 188,
+        "ads_norm": 188.0,
+        "spend": 75212,
+        "spend_norm": 75212,
+        "winners": 9,
+        "winners_norm": 9.0,
+        "hit_rate": 4.8,
+        "scalers": 2,
+        "scalers_norm": 2.0,
         "scalers_complete": false,
         "scaler_bar": 6000,
-        "cpa": 106,
-        "near_good": 13,
-        "near_weak": 10,
-        "cold": 224
+        "cpa": 115,
+        "near_good": 4,
+        "near_weak": 5,
+        "cold": 170
       },
       "winners_list": [
         {
-          "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 17072,
-          "cpa": 101,
-          "days": 16
-        },
-        {
-          "name": "Ambassador Mashup - Sleep · Hook v1 · Vitals⁺, Magnesium⁺",
-          "spend": 9370,
-          "cpa": 102,
-          "days": 25
-        },
-        {
-          "name": "Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
+          "name": "2604-117-02 · Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
           "spend": 8493,
           "cpa": 113,
-          "days": 16
+          "days": 16,
+          "first_spend": "Apr 10",
+          "sprint_day": 10
         },
         {
-          "name": "Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
-          "spend": 7681,
-          "cpa": 95,
-          "days": 12
-        },
-        {
-          "name": "Rylan - Rylan & Dan Podcast · Dan Focus - Hook 2 · Vitals⁺",
-          "spend": 6474,
-          "cpa": 116,
-          "days": 18
-        },
-        {
-          "name": "Vitals · Burnt Out Pro · Still Tired AM · Internal · New Concept · V1-01",
+          "name": "2603-064-02 · Vitals · Burnt Out Pro · Still Tired AM · Internal · New Concept · V1-01",
           "spend": 6223,
           "cpa": 132,
-          "days": 23
+          "days": 23,
+          "first_spend": "Apr 03",
+          "sprint_day": 3
         },
         {
-          "name": "Ambassador Energy Mashup · More subtle · Vitals⁺",
-          "spend": 5387,
-          "cpa": 93,
-          "days": 18
-        },
-        {
-          "name": "Free Mag · Burnt Out Pro · Can't Focus · Hambi · New Concept · V1-02",
+          "name": "2604-145-01 · Free Mag · Burnt Out Pro · Can't Focus · Hambi · New Concept · V1-02",
           "spend": 5183,
           "cpa": 64,
-          "days": 12
+          "days": 12,
+          "first_spend": "Apr 14",
+          "sprint_day": 14
         },
         {
-          "name": "Ambassador Mashup - Sleep · Hook v1 · Vitals⁺, Magnesium⁺",
-          "spend": 4777,
-          "cpa": 126,
-          "days": 25
-        },
-        {
-          "name": "Free Mag · Burnt Out Pro · toomanysupps · Hambi · New Concept · V1-02",
+          "name": "2604-145-03 · Free Mag · Burnt Out Pro · toomanysupps · Hambi · New Concept · V1-02",
           "spend": 4603,
           "cpa": 70,
-          "days": 12
+          "days": 12,
+          "first_spend": "Apr 14",
+          "sprint_day": 14
         },
         {
-          "name": "Free Mag · Hambi · Iteration",
+          "name": "2604-099-06 · Free Mag · Hambi · Iteration",
           "spend": 4573,
           "cpa": 59,
-          "days": 20
+          "days": 20,
+          "first_spend": "Apr 06",
+          "sprint_day": 6
         },
         {
-          "name": "Ben Shephard - Launch Assets · Fit for Life - Hook 3- Long · Vitals⁺",
-          "spend": 4136,
-          "cpa": 77,
-          "days": 18
-        },
-        {
-          "name": "Ambassador Mashup - Scepticism · Hook v2 · Vitals⁺",
-          "spend": 3940,
-          "cpa": 116,
-          "days": 18
-        },
-        {
-          "name": "Vitals · Still Tired AM · paidinfluencer · PERIMENOPAUSE",
+          "name": "2603-025-05 · Vitals · Still Tired AM · paidinfluencer · PERIMENOPAUSE",
           "spend": 3811,
           "cpa": 119,
-          "days": 24
+          "days": 24,
+          "first_spend": "Apr 02",
+          "sprint_day": 2
         },
         {
-          "name": "Free Mag · Burnt Out Pro · More Energy · Hambi · New Concept · V1-02",
+          "name": "2604-161-04 · Free Mag · Burnt Out Pro · More Energy · Hambi · New Concept · V1-02",
           "spend": 3758,
           "cpa": 92,
-          "days": 12
+          "days": 12,
+          "first_spend": "Apr 14",
+          "sprint_day": 14
         },
         {
-          "name": "Vitals · athlete · gymrecovery · Hambi · New Concept · V1-02",
+          "name": "2604-156-01 · Vitals · athlete · gymrecovery · Hambi · New Concept · V1-02",
           "spend": 3688,
           "cpa": 154,
-          "days": 12
+          "days": 12,
+          "first_spend": "Apr 14",
+          "sprint_day": 14
         },
         {
-          "name": "Ben Shephard - Launch Assets · Family as Fuel - Hook 2 - Short · Vitals⁺",
-          "spend": 3381,
-          "cpa": 82,
-          "days": 17
-        },
-        {
-          "name": "Vitals · Supplement Sceptic · toomanysupps · Hambi · New Concept · V1-02",
+          "name": "2604-164-01 · Vitals · Supplement Sceptic · toomanysupps · Hambi · New Concept · V1-02",
           "spend": 3088,
           "cpa": 206,
-          "days": 12
+          "days": 12,
+          "first_spend": "Apr 14",
+          "sprint_day": 14
         }
       ],
       "scalers_list": [
         {
-          "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 17072,
-          "spend_6w": 17072,
-          "cpa": 101,
-          "days": 16
-        },
-        {
-          "name": "Ambassador Mashup - Sleep · Hook v1 · Vitals⁺, Magnesium⁺",
-          "spend": 9370,
-          "spend_6w": 9370,
-          "cpa": 102,
-          "days": 25
-        },
-        {
-          "name": "Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
+          "name": "2604-117-02 · Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
           "spend": 8493,
           "spend_6w": 8493,
           "cpa": 113,
-          "days": 16
+          "days": 16,
+          "first_spend": "Apr 10",
+          "sprint_day": 10
         },
         {
-          "name": "Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
-          "spend": 7681,
-          "spend_6w": 7681,
-          "cpa": 95,
-          "days": 12
-        },
-        {
-          "name": "Rylan - Rylan & Dan Podcast · Dan Focus - Hook 2 · Vitals⁺",
-          "spend": 6474,
-          "spend_6w": 6474,
-          "cpa": 116,
-          "days": 18
-        },
-        {
-          "name": "Vitals · Burnt Out Pro · Still Tired AM · Internal · New Concept · V1-01",
+          "name": "2603-064-02 · Vitals · Burnt Out Pro · Still Tired AM · Internal · New Concept · V1-01",
           "spend": 6223,
           "spend_6w": 6223,
           "cpa": 132,
-          "days": 23
+          "days": 23,
+          "first_spend": "Apr 03",
+          "sprint_day": 3
         }
       ],
       "assess_date": "14 May",
@@ -423,55 +350,49 @@
       "note": "",
       "unit": 14,
       "stats": {
-        "ads": 188,
-        "ads_norm": 188.0,
-        "spend": 53278,
-        "spend_norm": 53278,
-        "winners": 4,
-        "winners_norm": 4.0,
-        "hit_rate": 2.1,
+        "ads": 143,
+        "ads_norm": 143.0,
+        "spend": 32767,
+        "spend_norm": 32767,
+        "winners": 2,
+        "winners_norm": 2.0,
+        "hit_rate": 1.4,
         "scalers": 1,
         "scalers_norm": 1.0,
         "scalers_complete": false,
         "scaler_bar": 6000,
-        "cpa": 137,
-        "near_good": 1,
-        "near_weak": 6,
-        "cold": 177
+        "cpa": 152,
+        "near_good": 0,
+        "near_weak": 4,
+        "cold": 137
       },
       "winners_list": [
         {
-          "name": "Free Mag · Burnt Out Pro · More Energy · Internal · Iteration · V1-02",
+          "name": "2604-193-14 · Free Mag · Burnt Out Pro · More Energy · Internal · Iteration · V1-02",
           "spend": 7882,
           "cpa": 78,
-          "days": 8
+          "days": 8,
+          "first_spend": "Apr 18",
+          "sprint_day": 4
         },
         {
-          "name": "Ambassador Mashup - Sleep · Hook v1 · Vitals⁺, Magnesium⁺",
-          "spend": 4886,
-          "cpa": 114,
-          "days": 4
-        },
-        {
-          "name": "Vitals · founderhp · More Energy · Internal · Iteration · V1-02",
-          "spend": 4014,
-          "cpa": 154,
-          "days": 4
-        },
-        {
-          "name": "Vitals · Burnt Out Pro · 3pm Crash · Internal · New Concept · V1-02",
+          "name": "2604-179-02 · Vitals · Burnt Out Pro · 3pm Crash · Internal · New Concept · V1-02",
           "spend": 3223,
           "cpa": 134,
-          "days": 9
+          "days": 9,
+          "first_spend": "Apr 17",
+          "sprint_day": 3
         }
       ],
       "scalers_list": [
         {
-          "name": "Free Mag · Burnt Out Pro · More Energy · Internal · Iteration · V1-02",
+          "name": "2604-193-14 · Free Mag · Burnt Out Pro · More Energy · Internal · Iteration · V1-02",
           "spend": 7882,
           "spend_6w": 7882,
           "cpa": 78,
-          "days": 8
+          "days": 8,
+          "first_spend": "Apr 18",
+          "sprint_day": 4
         }
       ],
       "assess_date": "28 May",
@@ -487,10 +408,10 @@
       "note": "",
       "unit": 14,
       "stats": {
-        "ads": 3,
-        "ads_norm": 3.0,
-        "spend": 400,
-        "spend_norm": 400,
+        "ads": 2,
+        "ads_norm": 2.0,
+        "spend": 387,
+        "spend_norm": 387,
         "winners": 0,
         "winners_norm": 0.0,
         "hit_rate": 0.0,
@@ -498,10 +419,10 @@
         "scalers_norm": 0.0,
         "scalers_complete": false,
         "scaler_bar": 6000,
-        "cpa": 200,
+        "cpa": 387,
         "near_good": 0,
         "near_weak": 0,
-        "cold": 3
+        "cold": 2
       },
       "winners_list": [],
       "scalers_list": [],
@@ -510,134 +431,134 @@
     }
   ],
   "timing": {
-    "total_winners": 320,
+    "total_winners": 161,
     "median_early": 5,
-    "median_win": 14,
-    "pct_d14": 52,
-    "pct_d30": 85,
+    "median_win": 13,
+    "pct_d14": 54,
+    "pct_d30": 89,
     "dist": [
-      21,
-      32,
-      20,
-      13,
-      9,
-      2
+      17,
+      37,
+      23,
+      12,
+      6,
+      0
     ],
     "threshold": 3000,
     "early_threshold": 900
   },
   "lifecycle": {
-    "n_winners": 199,
+    "n_winners": 100,
     "floor": 5000,
-    "total_avg": 14762,
-    "pre30_pct": 57,
-    "post30_pct": 43,
+    "total_avg": 14958,
+    "pre30_pct": 56,
+    "post30_pct": 44,
     "band_avgs": [
-      1991,
-      2348,
-      2056,
-      2036,
-      1861,
-      1377,
-      914,
-      570
+      1758,
+      2549,
+      2061,
+      2030,
+      1956,
+      1143,
+      760,
+      640
     ],
     "d0_14_pct": 29,
-    "d14_30_pct": 28,
-    "d30plus_pct": 43,
-    "d0_14_avg": 4339,
-    "d14_30_avg": 4092,
-    "d30plus_avg": 6331
+    "d14_30_pct": 27,
+    "d30plus_pct": 44,
+    "d0_14_avg": 4307,
+    "d14_30_avg": 4091,
+    "d30plus_avg": 6560
   },
   "chart": [
     {
       "label": "Dec 29",
-      "n": 87,
+      "n": 30,
       "bucket": "pre"
     },
     {
       "label": "Jan 05",
-      "n": 195,
+      "n": 32,
       "bucket": "pre"
     },
     {
       "label": "Jan 12",
-      "n": 21,
+      "n": 17,
       "bucket": "pre"
     },
     {
       "label": "Jan 19",
-      "n": 55,
+      "n": 24,
       "bucket": "pre"
     },
     {
       "label": "Jan 26",
-      "n": 9,
+      "n": 8,
       "bucket": "pre"
     },
     {
       "label": "Feb 02",
-      "n": 132,
+      "n": 39,
       "bucket": "pre"
     },
     {
       "label": "Feb 09",
-      "n": 116,
+      "n": 13,
       "bucket": "pre"
     },
     {
       "label": "Feb 16",
-      "n": 50,
+      "n": 13,
       "bucket": "pre"
     },
     {
       "label": "Feb 23",
-      "n": 136,
+      "n": 42,
       "bucket": "s1"
     },
     {
       "label": "Mar 02",
-      "n": 69,
+      "n": 56,
       "bucket": "s1"
     },
     {
       "label": "Mar 09",
-      "n": 90,
+      "n": 29,
       "bucket": "s1"
     },
     {
       "label": "Mar 16",
-      "n": 94,
+      "n": 75,
       "bucket": "s1"
     },
     {
       "label": "Mar 23",
-      "n": 63,
+      "n": 51,
       "bucket": "gap"
     },
     {
       "label": "Mar 30",
-      "n": 128,
+      "n": 82,
       "bucket": "gap"
     },
     {
       "label": "Apr 06",
-      "n": 89,
+      "n": 48,
       "bucket": "s2"
     },
     {
       "label": "Apr 13",
-      "n": 154,
+      "n": 141,
       "bucket": "s2"
     },
     {
       "label": "Apr 20",
-      "n": 88,
+      "n": 44,
       "bucket": "s3"
     },
     {
       "label": "Apr 27",
-      "n": 50,
+      "n": 48,
       "bucket": "s3"
     }
   ]
