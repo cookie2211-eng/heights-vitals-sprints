@@ -37,7 +37,7 @@
       "start": "2026-02-18",
       "end": "2026-03-18",
       "days": 29,
-      "note": "Old creative strat (exited) → new CS joined mid-sprint (16 Mar)",
+      "note": "",
       "unit": 14,
       "stats": {
         "ads": 191,
@@ -187,35 +187,6 @@
       ],
       "assess_date": "17 Apr",
       "assess_wks": "8.3 wks"
-    },
-    {
-      "id": "gap",
-      "label": "Gap — CS onboarding",
-      "sublabel": "Thu 19 Mar → Tue 31 Mar · 13 days",
-      "start": "2026-03-19",
-      "end": "2026-03-31",
-      "days": 13,
-      "note": "New CS onboarding. Existing campaigns running — not new sprint output.",
-      "unit": 14,
-      "stats": {
-        "ads": 101,
-        "ads_norm": 109.0,
-        "spend": 30183,
-        "spend_norm": 32505,
-        "winners": 0,
-        "winners_norm": 0.0,
-        "hit_rate": 0.0,
-        "scalers": 0,
-        "scalers_norm": 0.0,
-        "scalers_complete": false,
-        "scaler_bar": 6000,
-        "cpa": 190,
-        "near_good": 1,
-        "near_weak": 2,
-        "cold": 98
-      },
-      "winners_list": [],
-      "scalers_list": []
     },
     {
       "id": "s2",
@@ -534,12 +505,12 @@
     {
       "label": "Mar 23",
       "n": 51,
-      "bucket": "gap"
+      "bucket": "post"
     },
     {
       "label": "Mar 30",
       "n": 82,
-      "bucket": "gap"
+      "bucket": "post"
     },
     {
       "label": "Apr 06",
