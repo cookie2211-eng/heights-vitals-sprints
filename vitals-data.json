@@ -42,8 +42,8 @@
       "stats": {
         "ads": 191,
         "ads_norm": 92.0,
-        "spend": 204719,
-        "spend_norm": 98830,
+        "spend": 201801,
+        "spend_norm": 97421,
         "winners": 10,
         "winners_norm": 4.8,
         "hit_rate": 5.2,
@@ -59,7 +59,7 @@
       "winners_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 31970,
+          "spend": 31071,
           "cpa": 99,
           "days": 58,
           "first_spend": "Mar 06",
@@ -67,16 +67,16 @@
         },
         {
           "name": "Hambi · CM3 · ITERATION: Iteration_[01/01]_[VITALs+mag]_[Burnout]",
-          "spend": 22649,
-          "cpa": 73,
+          "spend": 22218,
+          "cpa": 72,
           "days": 72,
           "first_spend": "Feb 20",
           "sprint_day": 3
         },
         {
           "name": "Affiliate Whitelisting · Vitals⁺ · Product imagery, Customer quote",
-          "spend": 18242,
-          "cpa": 109,
+          "spend": 17804,
+          "cpa": 108,
           "days": 65,
           "first_spend": "Feb 27",
           "sprint_day": 10
@@ -141,7 +141,7 @@
       "scalers_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 31970,
+          "spend": 31071,
           "spend_6w": 21127,
           "cpa": 99,
           "days": 58,
@@ -150,18 +150,18 @@
         },
         {
           "name": "Hambi · CM3 · ITERATION: Iteration_[01/01]_[VITALs+mag]_[Burnout]",
-          "spend": 22649,
+          "spend": 22218,
           "spend_6w": 18353,
-          "cpa": 73,
+          "cpa": 72,
           "days": 72,
           "first_spend": "Feb 20",
           "sprint_day": 3
         },
         {
           "name": "Affiliate Whitelisting · Vitals⁺ · Product imagery, Customer quote",
-          "spend": 18242,
+          "spend": 17804,
           "spend_6w": 12239,
-          "cpa": 109,
+          "cpa": 108,
           "days": 65,
           "first_spend": "Feb 27",
           "sprint_day": 10
@@ -200,8 +200,8 @@
       "stats": {
         "ads": 188,
         "ads_norm": 188.0,
-        "spend": 80422,
-        "spend_norm": 80422,
+        "spend": 75212,
+        "spend_norm": 75212,
         "winners": 9,
         "winners_norm": 9.0,
         "hit_rate": 4.8,
@@ -209,16 +209,16 @@
         "scalers_norm": 2.0,
         "scalers_complete": false,
         "scaler_bar": 6000,
-        "cpa": 111,
-        "near_good": 5,
+        "cpa": 115,
+        "near_good": 4,
         "near_weak": 5,
-        "cold": 169
+        "cold": 170
       },
       "winners_list": [
         {
           "name": "2604-117-02 · Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
-          "spend": 9399,
-          "cpa": 112,
+          "spend": 8493,
+          "cpa": 113,
           "days": 23,
           "first_spend": "Apr 10",
           "sprint_day": 10
@@ -232,44 +232,28 @@
           "sprint_day": 3
         },
         {
-          "name": "2604-145-03 · Free Mag · Burnt Out Pro · toomanysupps · Hambi · New Concept · V1-02",
-          "spend": 5762,
-          "cpa": 61,
+          "name": "2604-145-01 · Free Mag · Burnt Out Pro · Can't Focus · Hambi · New Concept · V1-02",
+          "spend": 5183,
+          "cpa": 64,
           "days": 19,
           "first_spend": "Apr 14",
           "sprint_day": 14
         },
         {
-          "name": "2604-145-01 · Free Mag · Burnt Out Pro · Can't Focus · Hambi · New Concept · V1-02",
-          "spend": 5613,
-          "cpa": 62,
+          "name": "2604-145-03 · Free Mag · Burnt Out Pro · toomanysupps · Hambi · New Concept · V1-02",
+          "spend": 4603,
+          "cpa": 70,
           "days": 19,
           "first_spend": "Apr 14",
           "sprint_day": 14
         },
         {
           "name": "2604-099-06 · Free Mag · Hambi · Iteration",
-          "spend": 4978,
-          "cpa": 61,
+          "spend": 4573,
+          "cpa": 59,
           "days": 27,
           "first_spend": "Apr 06",
           "sprint_day": 6
-        },
-        {
-          "name": "2604-161-04 · Free Mag · Burnt Out Pro · More Energy · Hambi · New Concept · V1-02",
-          "spend": 4639,
-          "cpa": 86,
-          "days": 19,
-          "first_spend": "Apr 14",
-          "sprint_day": 14
-        },
-        {
-          "name": "2604-156-01 · Vitals · athlete · gymrecovery · Hambi · New Concept · V1-02",
-          "spend": 4330,
-          "cpa": 167,
-          "days": 19,
-          "first_spend": "Apr 14",
-          "sprint_day": 14
         },
         {
           "name": "2603-025-05 · Vitals · Still Tired AM · paidinfluencer · PERIMENOPAUSE",
@@ -278,6 +262,22 @@
           "days": 31,
           "first_spend": "Apr 02",
           "sprint_day": 2
+        },
+        {
+          "name": "2604-161-04 · Free Mag · Burnt Out Pro · More Energy · Hambi · New Concept · V1-02",
+          "spend": 3758,
+          "cpa": 92,
+          "days": 19,
+          "first_spend": "Apr 14",
+          "sprint_day": 14
+        },
+        {
+          "name": "2604-156-01 · Vitals · athlete · gymrecovery · Hambi · New Concept · V1-02",
+          "spend": 3688,
+          "cpa": 154,
+          "days": 19,
+          "first_spend": "Apr 14",
+          "sprint_day": 14
         },
         {
           "name": "2604-164-01 · Vitals · Supplement Sceptic · toomanysupps · Hambi · New Concept · V1-02",
@@ -291,9 +291,9 @@
       "scalers_list": [
         {
           "name": "2604-117-02 · Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
-          "spend": 9399,
-          "spend_6w": 9399,
-          "cpa": 112,
+          "spend": 8493,
+          "spend_6w": 8493,
+          "cpa": 113,
           "days": 23,
           "first_spend": "Apr 10",
           "sprint_day": 10
@@ -323,8 +323,8 @@
       "stats": {
         "ads": 143,
         "ads_norm": 143.0,
-        "spend": 38775,
-        "spend_norm": 38775,
+        "spend": 32767,
+        "spend_norm": 32767,
         "winners": 2,
         "winners_norm": 2.0,
         "hit_rate": 1.4,
@@ -332,16 +332,16 @@
         "scalers_norm": 1.0,
         "scalers_complete": false,
         "scaler_bar": 6000,
-        "cpa": 140,
-        "near_good": 2,
-        "near_weak": 5,
-        "cold": 134
+        "cpa": 152,
+        "near_good": 0,
+        "near_weak": 4,
+        "cold": 137
       },
       "winners_list": [
         {
           "name": "2604-193-14 · Free Mag · Burnt Out Pro · More Energy · Internal · Iteration · V1-02",
-          "spend": 9309,
-          "cpa": 73,
+          "spend": 7882,
+          "cpa": 78,
           "days": 15,
           "first_spend": "Apr 18",
           "sprint_day": 4
@@ -358,9 +358,9 @@
       "scalers_list": [
         {
           "name": "2604-193-14 · Free Mag · Burnt Out Pro · More Energy · Internal · Iteration · V1-02",
-          "spend": 9309,
-          "spend_6w": 9309,
-          "cpa": 73,
+          "spend": 7882,
+          "spend_6w": 7882,
+          "cpa": 78,
           "days": 15,
           "first_spend": "Apr 18",
           "sprint_day": 4
@@ -379,10 +379,10 @@
       "note": "",
       "unit": 14,
       "stats": {
-        "ads": 60,
-        "ads_norm": 60.0,
-        "spend": 2192,
-        "spend_norm": 2192,
+        "ads": 2,
+        "ads_norm": 2.0,
+        "spend": 387,
+        "spend_norm": 387,
         "winners": 0,
         "winners_norm": 0.0,
         "hit_rate": 0.0,
@@ -390,10 +390,10 @@
         "scalers_norm": 0.0,
         "scalers_complete": false,
         "scaler_bar": 6000,
-        "cpa": 219,
+        "cpa": 387,
         "near_good": 0,
         "near_weak": 0,
-        "cold": 60
+        "cold": 2
       },
       "winners_list": [],
       "scalers_list": [],
@@ -402,44 +402,44 @@
     }
   ],
   "timing": {
-    "total_winners": 163,
+    "total_winners": 161,
     "median_early": 5,
     "median_win": 13,
-    "pct_d14": 53,
-    "pct_d30": 88,
+    "pct_d14": 54,
+    "pct_d30": 89,
     "dist": [
       17,
-      36,
+      37,
       23,
       12,
-      7,
+      6,
       0
     ],
     "threshold": 3000,
     "early_threshold": 900
   },
   "lifecycle": {
-    "n_winners": 101,
+    "n_winners": 100,
     "floor": 5000,
-    "total_avg": 14966,
+    "total_avg": 14958,
     "pre30_pct": 56,
     "post30_pct": 44,
     "band_avgs": [
-      1743,
-      2544,
-      2094,
-      2019,
-      1937,
-      1138,
-      766,
-      638
+      1758,
+      2549,
+      2061,
+      2030,
+      1956,
+      1143,
+      760,
+      640
     ],
     "d0_14_pct": 29,
     "d14_30_pct": 27,
     "d30plus_pct": 44,
-    "d0_14_avg": 4287,
-    "d14_30_avg": 4113,
-    "d30plus_avg": 6566
+    "d0_14_avg": 4307,
+    "d14_30_avg": 4091,
+    "d30plus_avg": 6560
   },
   "chart": [
     {
@@ -529,7 +529,7 @@
     },
     {
       "label": "Apr 27",
-      "n": 106,
+      "n": 48,
       "bucket": "s3"
     }
   ]
