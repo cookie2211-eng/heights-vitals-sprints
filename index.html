@@ -64,11 +64,20 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);
 .lc-tile.identify .lc-lbl{color:var(--blue);}.lc-tile.confirm .lc-lbl{color:var(--green);}.lc-tile.scale .lc-lbl{color:var(--amber);}
 .lc-sub2{font-size:10px;color:var(--ink2);line-height:1.45;}
 .why-note{font-size:11px;color:var(--ink2);line-height:1.65;border-left:2px solid var(--rule2);padding-left:12px;margin-top:14px;}
-.sprint-block{background:var(--bg);border:1px solid var(--rule);border-radius:var(--radius-lg);padding:18px 22px;margin-bottom:18px;}
-.sprint-block.gap-block{border-style:dashed;background:var(--bg2);padding:12px 22px;margin-bottom:18px;}
+.sprint-block{background:var(--bg);border:2px solid var(--rule2);border-radius:var(--radius-lg);padding:18px 22px;margin-bottom:18px;box-shadow:0 1px 2px rgba(0,0,0,.03);}
+.sprint-block.gap-block{border-style:dashed;background:var(--bg2);padding:12px 22px;margin-bottom:18px;box-shadow:none;}
 .sprint-block.pre-block{background:var(--bg2);border-color:var(--rule2);padding:18px 22px;margin-bottom:24px;}
-.sprint-hdr{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--rule);}
+.sprint-block.collapsed .sprint-body{display:none;}
+.sprint-block.collapsed{padding-bottom:14px;}
+.sprint-block.collapsed .sprint-hdr{border-bottom:none;padding-bottom:0;margin-bottom:0;}
+.sprint-hdr{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--rule);cursor:pointer;user-select:none;}
+.sprint-hdr:hover .chev{color:var(--ink);}
+.chev{display:inline-block;font-size:11px;color:var(--ink3);margin-right:8px;transition:transform .15s;width:10px;}
+.sprint-block.collapsed .chev{transform:rotate(-90deg);}
 .sprint-block.gap-block .sprint-hdr{border-bottom:none;padding-bottom:0;margin-bottom:6px;}
+.sprint-summary{display:none;font-size:11px;color:var(--ink2);margin-top:6px;}
+.sprint-block.collapsed .sprint-summary{display:block;}
+.sprint-summary strong{color:var(--ink);font-weight:500;}
 .sprint-name{font-size:15px;font-weight:600;color:var(--ink);}.sprint-name.muted{color:var(--ink2);font-weight:500;}
 .sprint-dates{font-size:11px;color:var(--ink3);text-align:right;line-height:1.6;white-space:nowrap;}
 /* Stat grid — 3 visual groups split by larger gaps: inputs | outcomes | efficiency */
@@ -127,6 +136,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);
 .winners-drawer{display:none;margin-top:12px;border-top:1px solid var(--rule);padding-top:12px;}
 .winners-drawer.open{display:block;}
 .drawer-title{font-size:11px;color:var(--ink2);margin-bottom:10px;font-weight:500;letter-spacing:.02em;}
+.winners-drawer .sd{color:var(--ink3);font-size:10px;}
 .winners-drawer table{width:100%;border-collapse:collapse;font-size:11px;}
 .winners-drawer th{text-align:left;font-size:10px;font-weight:500;text-transform:uppercase;
   letter-spacing:.06em;color:var(--ink3);padding:0 10px 8px 0;border-bottom:1px solid var(--rule);}
@@ -152,8 +162,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);
 <div id="root"><div class="loading">Loading data...</div></div>
 <script>
 const PRODUCT = 'vitals';
-const COL_MAP = {"pre": "#aaaaaa", "s1": "#378ADD", "gap": "#bbbbbb", "s2": "#639922", "s3": "#EF9F27", "s4": "#D85A30"};
-const LEGEND = [{"cls": "leg-sq", "style": "background:#aaaaaa", "label": "Pre-sprint"}, {"cls": "leg-sq", "style": "background:#378ADD", "label": "Sprint 1 (18 Feb\u201318 Mar)"}, {"cls": "leg-sq", "style": "background:#bbbbbb;outline:1px dashed #999;outline-offset:1px", "label": "Gap (19\u201331 Mar)"}, {"cls": "leg-sq", "style": "background:#639922", "label": "Sprint 2 (1\u201314 Apr)"}, {"cls": "leg-sq", "style": "background:#EF9F27", "label": "Sprint 3 (15\u201328 Apr)"}, {"cls": "leg-sq", "style": "background:#D85A30", "label": "Sprint 4 (29 Apr+)"}, {"cls": "leg-line", "style": "", "label": "New CS joined 16 Mar"}];
+const COL_MAP = {"pre": "#aaaaaa", "s1": "#378ADD", "post": "#cccccc", "s2": "#639922", "s3": "#EF9F27", "s4": "#D85A30"};
+const LEGEND = [{"cls": "leg-sq", "style": "background:#aaaaaa", "label": "Pre-sprint"}, {"cls": "leg-sq", "style": "background:#378ADD", "label": "Sprint 1 (18 Feb\u201318 Mar)"}, {"cls": "leg-sq", "style": "background:#639922", "label": "Sprint 2 (1\u201314 Apr)"}, {"cls": "leg-sq", "style": "background:#EF9F27", "label": "Sprint 3 (15\u201328 Apr)"}, {"cls": "leg-sq", "style": "background:#D85A30", "label": "Sprint 4 (29 Apr+)"}];
 
 fetch('vitals-data.json')
   .then(r => r.json())
@@ -221,7 +231,7 @@ function render(DATA) {
   <div class="why-note">${lc_note}</div>
 </div>
 
-<div class="sec"><h2>3 · Sprint-by-sprint breakdown</h2><span>${prod_label} · winner = ≥${fmt(T)} in first 30d · scaler = winner with ≥${fmt(T*2)} by 6w</span></div>
+<div class="sec"><h2>3 · Sprint-by-sprint breakdown</h2><span>${prod_label} · winner = ≥${fmt(T)} in first 30d · scaler = winner with ≥${fmt(T*2)} by 6w · <a href="#" onclick="setAllSprints(false);return false;" style="color:var(--blue)">expand all</a> · <a href="#" onclick="setAllSprints(true);return false;" style="color:var(--blue)">collapse all</a></span></div>
 `;
 
   let sprint_num = 0;
@@ -309,7 +319,11 @@ function render(DATA) {
     // Pipeline for sprint 2
     let pipeline_html = '';
     if (sprint_num === 2 && st.near_good != null) {
-      pipeline_html = `<div style="font-size:11px;font-weight:500;color:var(--ink2);margin-bottom:8px">Winner pipeline · as of Apr 26</div>
+      const _months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      const _dataEndLabel = D.data_end
+        ? (() => { const [y,m,d] = D.data_end.split('-'); return `${_months[+m-1]} ${+d}`; })()
+        : 'latest data';
+      pipeline_html = `<div style="font-size:11px;font-weight:500;color:var(--ink2);margin-bottom:8px">Winner pipeline · as of ${_dataEndLabel}</div>
 <div class="pipeline-row">
   <div class="pipe-card confirmed"><div class="pipe-val">${st.winners}</div><div class="pipe-lbl">Confirmed</div><div class="pipe-sub">≥${fmt(T)} spend</div></div>
   <div class="pipe-card near-strong"><div class="pipe-val">${st.near_good}</div><div class="pipe-lbl">Near · good CPA</div><div class="pipe-sub">approaching threshold · CPA on track</div></div>
@@ -322,37 +336,39 @@ function render(DATA) {
     let winners_drawer_html = '';
     if (sp.winners_list && sp.winners_list.length > 0) {
       const rows = sp.winners_list.map(w =>
-        `<tr><td class="name">${w.name}</td><td class="spend">${fmt(w.spend)}</td><td class="cpa">${w.cpa ? fmt(w.cpa) : '—'}</td><td class="days">${w.days}d</td></tr>`
+        `<tr><td class="name">${w.name}</td><td class="days">${w.first_spend || '—'}${w.sprint_day ? ` <span class="sd">(d${w.sprint_day})</span>` : ''}</td><td class="spend">${fmt(w.spend)}</td><td class="cpa">${w.cpa ? fmt(w.cpa) : '—'}</td><td class="days">${w.days}d</td></tr>`
       ).join('');
       winners_drawer_html = `<div class="winners-drawer" id="${winners_drawer_id}">
   <div class="drawer-title">Winners · ${sp.winners_list.length} ad${sp.winners_list.length===1?'':'s'} that hit ≥${fmt(T)} in their first 30 days</div>
-  <table><thead><tr><th>Ad</th><th>Spend (lifetime)</th><th>CPA</th><th>Days since launch</th></tr></thead>
+  <table><thead><tr><th>Ad</th><th>First spend</th><th>Spend (lifetime)</th><th>CPA</th><th>Days since launch</th></tr></thead>
   <tbody>${rows}</tbody></table></div>`;
     }
     // Scalers drawer
     let scalers_drawer_html = '';
     if (sp.scalers_list && sp.scalers_list.length > 0) {
       const rows = sp.scalers_list.map(w =>
-        `<tr><td class="name">${w.name}</td><td class="spend">${fmt(w.spend_6w)}</td><td class="spend">${fmt(w.spend)}</td><td class="cpa">${w.cpa ? fmt(w.cpa) : '—'}</td><td class="days">${w.days}d</td></tr>`
+        `<tr><td class="name">${w.name}</td><td class="days">${w.first_spend || '—'}${w.sprint_day ? ` <span class="sd">(d${w.sprint_day})</span>` : ''}</td><td class="spend">${fmt(w.spend_6w)}</td><td class="spend">${fmt(w.spend)}</td><td class="cpa">${w.cpa ? fmt(w.cpa) : '—'}</td><td class="days">${w.days}d</td></tr>`
       ).join('');
       scalers_drawer_html = `<div class="winners-drawer" id="${scalers_drawer_id}">
   <div class="drawer-title">Scalers · ${sp.scalers_list.length} winner${sp.scalers_list.length===1?'':'s'} that hit ≥${fmt(st.scaler_bar)} by 6 weeks</div>
-  <table><thead><tr><th>Ad</th><th>By 6w</th><th>Lifetime</th><th>CPA</th><th>Days since launch</th></tr></thead>
+  <table><thead><tr><th>Ad</th><th>First spend</th><th>By 6w</th><th>Lifetime</th><th>CPA</th><th>Days since launch</th></tr></thead>
   <tbody>${rows}</tbody></table></div>`;
     }
 
-    html += `<div class="sprint-block">
-  <div class="sprint-hdr">
-    <div><span class="sprint-name">${sp.label}</span>${badge}</div>
+    const summary_line = `<div class="sprint-summary">${st.ads} ads · <strong>${st.winners} winners</strong> (${st.hit_rate}% hit) · <strong>${st.scalers} scalers</strong> · ${fmt(st.cpa)} CPA</div>`;
+    html += `<div class="sprint-block" id="sprint-${sp.id}">
+  <div class="sprint-hdr" onclick="toggleSprint('sprint-${sp.id}')">
+    <div><span class="chev">▾</span><span class="sprint-name">${sp.label}</span>${badge}${summary_line}</div>
     <div class="sprint-dates">${sp.sublabel}</div>
   </div>
+  <div class="sprint-body">
   ${note_html}
   <div class="sprint-stats">
     <div class="sstat support"><div class="sstat-val">${st.ads}</div><div class="sstat-lbl">ads launched</div></div>
     <div class="sstat support"><div class="sstat-val">${fmtK(st.spend)}</div><div class="sstat-lbl">spend</div></div>
     <div class="stat-spacer"></div>
     ${winners_stat}
-    <div class="sstat primary"><div class="sstat-val">${st.hit_rate}%</div><div class="sstat-lbl">hit rate</div></div>
+    <div class="sstat support"><div class="sstat-val">${st.hit_rate}%</div><div class="sstat-lbl">hit rate</div></div>
     ${scalers_stat}
     <div class="stat-spacer"></div>
     <div class="sstat support"><div class="sstat-val">${fmt(st.cpa)}</div><div class="sstat-lbl">blended CPA</div></div>
@@ -364,6 +380,7 @@ function render(DATA) {
   </div>
   ${winners_drawer_html}
   ${scalers_drawer_html}
+  </div>
 </div>`;
   });
 
@@ -384,6 +401,8 @@ function render(DATA) {
 
 function toggleDrawer(openId, closeId) {
   // Open one drawer, close the other (winners/scalers are mutually exclusive views)
+  // (Stats live in .sprint-body, a sibling of .sprint-hdr — clicks don't bubble
+  //  to the sprint toggle, so no stopPropagation needed.)
   const open = document.getElementById(openId);
   const close = closeId ? document.getElementById(closeId) : null;
   if (close) close.classList.remove('open');
@@ -391,6 +410,17 @@ function toggleDrawer(openId, closeId) {
 }
 // Backwards compat
 function toggleWinners(id) { toggleDrawer(id, null); }
+
+function toggleSprint(id) {
+  const el = document.getElementById(id);
+  if (el) el.classList.toggle('collapsed');
+}
+function setAllSprints(collapse) {
+  document.querySelectorAll('.sprint-block').forEach(el => {
+    if (collapse) el.classList.add('collapsed');
+    else el.classList.remove('collapsed');
+  });
+}
 
 function buildCharts(DATA) {
   const TM = DATA.timing; const LC = DATA.lifecycle; const CH = DATA.chart;
