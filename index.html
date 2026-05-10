@@ -320,8 +320,8 @@ function render(DATA) {
     let pipeline_html = '';
     if (sprint_num === 2 && st.near_good != null) {
       const _months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-      const _dataEndLabel = D.data_end
-        ? (() => { const [y,m,d] = D.data_end.split('-'); return `${_months[+m-1]} ${+d}`; })()
+      const _dataEndLabel = DATA.data_end
+        ? (() => { const [y,m,d] = DATA.data_end.split('-'); return `${_months[+m-1]} ${+d}`; })()
         : 'latest data';
       pipeline_html = `<div style="font-size:11px;font-weight:500;color:var(--ink2);margin-bottom:8px">Winner pipeline · as of ${_dataEndLabel}</div>
 <div class="pipeline-row">
