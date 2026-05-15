@@ -323,9 +323,11 @@ function render(DATA) {
           <div class="sstat-val">${st.scalers}</div><div class="sstat-lbl">scalers (≥${fmt(st.scaler_bar)} by 6w)</div>${st.scalers_complete ? '' : '<div class="sstat-prov">provisional</div>'}</div>`
       : `<div class="sstat scaler primary"><div class="sstat-val">${st.scalers}</div><div class="sstat-lbl">scalers (≥${fmt(st.scaler_bar)} by 6w)</div>${st.scalers_complete ? '' : '<div class="sstat-prov">provisional</div>'}</div>`;
 
-    // Pipeline for sprint 2
+    // Winner pipeline strip — show while the 30d window is still open (so you
+    // can track where in-flight sprints are likely to land). Hide once
+    // primary_complete=True (winner count is final, funnel adds nothing).
     let pipeline_html = '';
-    if (sprint_num === 2 && st.near_good != null) {
+    if (st.primary_complete === false && st.near_good != null) {
       const _months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
       const _dataEndLabel = DATA.data_end
         ? (() => { const [y,m,d] = DATA.data_end.split('-'); return `${_months[+m-1]} ${+d}`; })()
