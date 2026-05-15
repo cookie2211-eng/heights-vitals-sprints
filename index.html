@@ -276,28 +276,35 @@ function render(DATA) {
       return;
     }
 
-    // Assessment status
+    // Assessment status — data-driven from primary_complete + scalers_complete
+    // (computed in generate.py from data_end vs sprint window end). Falls back to
+    // sprint_num for older JSONs that don't carry these flags.
     let assess_class, assess_label, assess_meta, badge;
-    if (sprint_num === 1) {
+    if (st.scalers_complete) {
+      // Both 30-day and 42-day windows closed — final figures
       assess_class = 'done';
       assess_label = 'Full assessment complete · 30d window closed ' + sp.assess_date;
-      assess_meta = 'Sprint length + 30 days = ' + sp.assess_wks + ' from start · ' + st.winners + ' confirmed winners · figures are final';
+      assess_meta = 'Sprint length + 30 days = ' + sp.assess_wks + ' from start · ' + st.winners + ' confirmed winners · ' + st.scalers + ' scalers · figures are final';
       badge = '';
-    } else if (sprint_num === 2) {
+    } else if (st.primary_complete) {
+      // 30-day winner count is final; scaler count may still tick up
       assess_class = 'partial';
+      assess_label = 'Winners final · 30d window closed · scalers still settling';
+      assess_meta = st.winners + ' confirmed winners · ' + st.scalers + ' scalers so far (final scaler count ~' + sp.assess_wks + ' after sprint start) · CPA ' + fmt(st.cpa);
+      badge = '<span class="badge badge-amber">scalers provisional</span>';
+    } else if (st.primary_progress != null && st.primary_progress >= 0.3) {
+      // Primary window mostly accumulated but not yet closed — meaningful early read
+      const _pct = Math.round((st.primary_progress || 0) * 100);
+      assess_class = 'pending';
       assess_label = 'Full assessment complete: ~' + sp.assess_date + ' · ' + sp.assess_wks + ' from sprint start';
-      assess_meta = st.near_good + ' near-winners with good CPA still in window · realistic final count ' + (st.winners+2) + '–' + (st.winners+st.near_good) + ' winners · CPA ' + fmt(st.cpa);
+      assess_meta = '30d window ' + _pct + '% accumulated · ' + st.near_good + ' near-winners with good CPA still in window · realistic final count ' + (st.winners + Math.min(2, st.near_good)) + '–' + (st.winners + st.near_good) + ' winners · CPA ' + fmt(st.cpa);
       badge = '<span class="badge badge-amber">window open</span>';
-    } else if (sprint_num === 3) {
-      assess_class = 'pending';
-      assess_label = 'Full assessment complete: ~' + sp.assess_date + ' · ' + sp.assess_wks + ' from sprint start';
-      assess_meta = 'Most ads only days old · current ' + st.hit_rate + '% hit rate not yet meaningful · first real read ~mid-May';
-      badge = '<span class="badge badge-gray">too early to assess</span>';
     } else {
+      // Sprint just ended or still running — too early for meaningful read
       assess_class = 'pending';
       assess_label = 'Full assessment complete: ~' + sp.assess_date + ' · ' + sp.assess_wks + ' from sprint start';
-      assess_meta = 'Data window open · early signals emerging';
-      badge = '<span class="badge badge-gray">early data</span>';
+      assess_meta = 'Most ads only days old · current ' + st.hit_rate + '% hit rate not yet meaningful';
+      badge = '<span class="badge badge-gray">too early to assess</span>';
     }
 
     const note_html = sp.note ? `<div style="margin-bottom:10px"><span class="pill">${sp.note}</span></div>` : '';
