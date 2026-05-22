@@ -45,8 +45,8 @@
       "stats": {
         "ads": 212,
         "ads_norm": 102.0,
-        "spend": 225157,
-        "spend_norm": 108697,
+        "spend": 226801,
+        "spend_norm": 109490,
         "winners": 10,
         "winners_norm": 4.8,
         "hit_rate": 4.7,
@@ -64,16 +64,16 @@
       "winners_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 36873,
-          "cpa": 101,
+          "spend": 37522,
+          "cpa": 100,
           "days": 69,
           "first_spend": "Mar 06",
           "sprint_day": 17
         },
         {
           "name": "Hambi · CM3 · ITERATION: Iteration_[01/01]_[VITALs+mag]_[Burnout]",
-          "spend": 23611,
-          "cpa": 70,
+          "spend": 23723,
+          "cpa": 71,
           "days": 83,
           "first_spend": "Feb 20",
           "sprint_day": 3
@@ -146,18 +146,18 @@
       "scalers_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 36873,
+          "spend": 37522,
           "spend_6w": 21127,
-          "cpa": 101,
+          "cpa": 100,
           "days": 69,
           "first_spend": "Mar 06",
           "sprint_day": 17
         },
         {
           "name": "Hambi · CM3 · ITERATION: Iteration_[01/01]_[VITALs+mag]_[Burnout]",
-          "spend": 23611,
+          "spend": 23723,
           "spend_6w": 18353,
-          "cpa": 70,
+          "cpa": 71,
           "days": 83,
           "first_spend": "Feb 20",
           "sprint_day": 3
@@ -205,8 +205,8 @@
       "stats": {
         "ads": 171,
         "ads_norm": 171.0,
-        "spend": 97187,
-        "spend_norm": 97187,
+        "spend": 102255,
+        "spend_norm": 102255,
         "winners": 8,
         "winners_norm": 8.0,
         "hit_rate": 4.7,
@@ -224,7 +224,7 @@
       "winners_list": [
         {
           "name": "2604-145-03 · Free Mag · Burnt Out Pro · toomanysupps · Hambi · New Concept · V1-02",
-          "spend": 18077,
+          "spend": 19838,
           "cpa": 57,
           "days": 30,
           "first_spend": "Apr 14",
@@ -232,19 +232,27 @@
         },
         {
           "name": "2604-117-02 · Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
-          "spend": 15686,
-          "cpa": 106,
+          "spend": 16947,
+          "cpa": 107,
           "days": 34,
           "first_spend": "Apr 10",
           "sprint_day": 10
         },
         {
           "name": "2604-145-01 · Free Mag · Burnt Out Pro · Can't Focus · Hambi · New Concept · V1-02",
-          "spend": 6371,
-          "cpa": 66,
+          "spend": 6413,
+          "cpa": 67,
           "days": 30,
           "first_spend": "Apr 14",
           "sprint_day": 14
+        },
+        {
+          "name": "2604-099-06 · Free Mag · Hambi · Iteration",
+          "spend": 6244,
+          "cpa": 57,
+          "days": 38,
+          "first_spend": "Apr 06",
+          "sprint_day": 6
         },
         {
           "name": "2603-064-02 · Vitals · Burnt Out Pro · Still Tired AM · Internal · New Concept · V1-01",
@@ -253,14 +261,6 @@
           "days": 41,
           "first_spend": "Apr 03",
           "sprint_day": 2
-        },
-        {
-          "name": "2604-099-06 · Free Mag · Hambi · Iteration",
-          "spend": 5896,
-          "cpa": 57,
-          "days": 38,
-          "first_spend": "Apr 06",
-          "sprint_day": 6
         },
         {
           "name": "2604-161-04 · Free Mag · Burnt Out Pro · More Energy · Hambi · New Concept · V1-02",
@@ -290,8 +290,8 @@
       "scalers_list": [
         {
           "name": "2604-145-03 · Free Mag · Burnt Out Pro · toomanysupps · Hambi · New Concept · V1-02",
-          "spend": 18077,
-          "spend_6w": 18077,
+          "spend": 19838,
+          "spend_6w": 19838,
           "cpa": 57,
           "days": 30,
           "first_spend": "Apr 14",
@@ -299,18 +299,18 @@
         },
         {
           "name": "2604-117-02 · Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-02",
-          "spend": 15686,
-          "spend_6w": 15686,
-          "cpa": 106,
+          "spend": 16947,
+          "spend_6w": 16947,
+          "cpa": 107,
           "days": 34,
           "first_spend": "Apr 10",
           "sprint_day": 10
         },
         {
           "name": "2604-145-01 · Free Mag · Burnt Out Pro · Can't Focus · Hambi · New Concept · V1-02",
-          "spend": 6371,
-          "spend_6w": 6371,
-          "cpa": 66,
+          "spend": 6413,
+          "spend_6w": 6413,
+          "cpa": 67,
           "days": 30,
           "first_spend": "Apr 14",
           "sprint_day": 14
@@ -340,26 +340,26 @@
       "stats": {
         "ads": 145,
         "ads_norm": 145.0,
-        "spend": 64629,
-        "spend_norm": 64629,
+        "spend": 67804,
+        "spend_norm": 67804,
         "winners": 4,
         "winners_norm": 4.0,
         "hit_rate": 2.8,
-        "scalers": 2,
-        "scalers_norm": 2.0,
+        "scalers": 3,
+        "scalers_norm": 3.0,
         "scalers_complete": false,
         "primary_complete": false,
         "primary_progress": 0.53,
         "scaler_bar": 6000,
-        "cpa": 144,
-        "near_good": 3,
+        "cpa": 143,
+        "near_good": 4,
         "near_weak": 9,
-        "cold": 129
+        "cold": 128
       },
       "winners_list": [
         {
           "name": "2604-193-14 · Free Mag · Burnt Out Pro · More Energy · Internal · Iteration · V1-02",
-          "spend": 13925,
+          "spend": 14366,
           "cpa": 73,
           "days": 26,
           "first_spend": "Apr 18",
@@ -367,16 +367,16 @@
         },
         {
           "name": "2604-241-03 · Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-03",
-          "spend": 7602,
-          "cpa": 143,
+          "spend": 8628,
+          "cpa": 137,
           "days": 16,
           "first_spend": "Apr 28",
           "sprint_day": 14
         },
         {
           "name": "2604-222-01 · Vitals · neurodivergentoptimiser · More Energy · Internal · New Concept · V1-03",
-          "spend": 5798,
-          "cpa": 153,
+          "spend": 6683,
+          "cpa": 155,
           "days": 16,
           "first_spend": "Apr 28",
           "sprint_day": 14
@@ -393,8 +393,8 @@
       "scalers_list": [
         {
           "name": "2604-193-14 · Free Mag · Burnt Out Pro · More Energy · Internal · Iteration · V1-02",
-          "spend": 13925,
-          "spend_6w": 13925,
+          "spend": 14366,
+          "spend_6w": 14366,
           "cpa": 73,
           "days": 26,
           "first_spend": "Apr 18",
@@ -402,9 +402,18 @@
         },
         {
           "name": "2604-241-03 · Vitals · Burnt Out Pro · Can't Focus · Internal · Iteration · V1-03",
-          "spend": 7602,
-          "spend_6w": 7602,
-          "cpa": 143,
+          "spend": 8628,
+          "spend_6w": 8628,
+          "cpa": 137,
+          "days": 16,
+          "first_spend": "Apr 28",
+          "sprint_day": 14
+        },
+        {
+          "name": "2604-222-01 · Vitals · neurodivergentoptimiser · More Energy · Internal · New Concept · V1-03",
+          "spend": 6683,
+          "spend_6w": 6683,
+          "cpa": 155,
           "days": 16,
           "first_spend": "Apr 28",
           "sprint_day": 14
@@ -425,51 +434,51 @@
       "stats": {
         "ads": 209,
         "ads_norm": 209.0,
-        "spend": 52571,
-        "spend_norm": 52571,
+        "spend": 62478,
+        "spend_norm": 62478,
         "winners": 4,
         "winners_norm": 4.0,
         "hit_rate": 1.9,
-        "scalers": 1,
-        "scalers_norm": 1.0,
+        "scalers": 3,
+        "scalers_norm": 3.0,
         "scalers_complete": false,
         "primary_complete": false,
         "primary_progress": 0.07,
         "scaler_bar": 6000,
-        "cpa": 138,
-        "near_good": 1,
-        "near_weak": 8,
+        "cpa": 141,
+        "near_good": 0,
+        "near_weak": 9,
         "cold": 196
       },
       "winners_list": [
         {
           "name": "2604-277-01 · Vitals · Burnt Out Pro · More Energy · Internal · Iteration · V1-03",
-          "spend": 7271,
-          "cpa": 78,
+          "spend": 9151,
+          "cpa": 90,
           "days": 12,
           "first_spend": "May 02",
           "sprint_day": 4
         },
         {
           "name": "2605-295-03 · Vitals · parentyoungkidsdad · More Energy · Internal · New Concept · V1-04",
-          "spend": 5721,
-          "cpa": 124,
+          "spend": 6735,
+          "cpa": 120,
           "days": 12,
           "first_spend": "May 02",
           "sprint_day": 4
         },
         {
           "name": "2605-300-02 · Vitals · parentyoungkidsdad · More Energy · Internal · New Concept · V1-04",
-          "spend": 4416,
-          "cpa": 88,
+          "spend": 6566,
+          "cpa": 104,
           "days": 7,
           "first_spend": "May 07",
           "sprint_day": 8
         },
         {
           "name": "2605-305-02 · Vitals · Health Optimiser · More Energy · paidinfluencer · V1-04",
-          "spend": 3738,
-          "cpa": 121,
+          "spend": 5113,
+          "cpa": 109,
           "days": 5,
           "first_spend": "May 09",
           "sprint_day": 10
@@ -478,12 +487,30 @@
       "scalers_list": [
         {
           "name": "2604-277-01 · Vitals · Burnt Out Pro · More Energy · Internal · Iteration · V1-03",
-          "spend": 7271,
-          "spend_6w": 7271,
-          "cpa": 78,
+          "spend": 9151,
+          "spend_6w": 9151,
+          "cpa": 90,
           "days": 12,
           "first_spend": "May 02",
           "sprint_day": 4
+        },
+        {
+          "name": "2605-295-03 · Vitals · parentyoungkidsdad · More Energy · Internal · New Concept · V1-04",
+          "spend": 6735,
+          "spend_6w": 6735,
+          "cpa": 120,
+          "days": 12,
+          "first_spend": "May 02",
+          "sprint_day": 4
+        },
+        {
+          "name": "2605-300-02 · Vitals · parentyoungkidsdad · More Energy · Internal · New Concept · V1-04",
+          "spend": 6566,
+          "spend_6w": 6566,
+          "cpa": 104,
+          "days": 7,
+          "first_spend": "May 07",
+          "sprint_day": 8
         }
       ],
       "assess_date": "11 Jun",
@@ -491,7 +518,7 @@
     }
   ],
   "timing": {
-    "total_winners": 169,
+    "total_winners": 170,
     "median_early": 5,
     "median_win": 13,
     "pct_d14": 55,
@@ -501,34 +528,34 @@
       38,
       22,
       11,
-      7,
+      6,
       0
     ],
     "threshold": 3000,
     "early_threshold": 900
   },
   "lifecycle": {
-    "n_winners": 107,
+    "n_winners": 109,
     "floor": 5000,
-    "total_avg": 14997,
-    "pre30_pct": 56,
+    "total_avg": 14951,
+    "pre30_pct": 55,
     "post30_pct": 44,
     "band_avgs": [
-      1711,
-      2504,
-      2085,
-      2050,
-      1877,
-      1084,
-      774,
-      620
+      1712,
+      2527,
+      2078,
+      2030,
+      1875,
+      1067,
+      760,
+      614
     ],
     "d0_14_pct": 28,
-    "d14_30_pct": 28,
+    "d14_30_pct": 27,
     "d30plus_pct": 44,
-    "d0_14_avg": 4215,
-    "d14_30_avg": 4135,
-    "d30plus_avg": 6647
+    "d0_14_avg": 4239,
+    "d14_30_avg": 4108,
+    "d30plus_avg": 6604
   },
   "chart": [
     {
@@ -630,6 +657,11 @@
       "label": "May 11",
       "n": 117,
       "bucket": "s4"
+    },
+    {
+      "label": "May 18",
+      "n": 38,
+      "bucket": "post"
     }
   ]
 }
