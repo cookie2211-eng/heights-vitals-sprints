@@ -45,8 +45,8 @@
       "stats": {
         "ads": 212,
         "ads_norm": 102.0,
-        "spend": 231305,
-        "spend_norm": 111664,
+        "spend": 234231,
+        "spend_norm": 113077,
         "winners": 10,
         "winners_norm": 4.8,
         "hit_rate": 4.7,
@@ -64,8 +64,8 @@
       "winners_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 41223,
-          "cpa": 99,
+          "spend": 43596,
+          "cpa": 100,
           "days": 86,
           "first_spend": "Mar 06",
           "sprint_day": 17
@@ -146,9 +146,9 @@
       "scalers_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 41223,
+          "spend": 43596,
           "spend_6w": 21127,
-          "cpa": 99,
+          "cpa": 100,
           "days": 86,
           "first_spend": "Mar 06",
           "sprint_day": 17
@@ -205,8 +205,8 @@
       "stats": {
         "ads": 171,
         "ads_norm": 171.0,
-        "spend": 111595,
-        "spend_norm": 111595,
+        "spend": 113735,
+        "spend_norm": 113735,
         "winners": 8,
         "winners_norm": 8.0,
         "hit_rate": 4.7,
@@ -216,7 +216,7 @@
         "primary_complete": true,
         "primary_progress": 1.57,
         "scaler_bar": 6000,
-        "cpa": 95,
+        "cpa": 94,
         "near_good": 3,
         "near_weak": 5,
         "cold": 155
@@ -340,8 +340,8 @@
       "stats": {
         "ads": 147,
         "ads_norm": 147.0,
-        "spend": 72453,
-        "spend_norm": 72453,
+        "spend": 72455,
+        "spend_norm": 72455,
         "winners": 4,
         "winners_norm": 4.0,
         "hit_rate": 2.7,
@@ -434,35 +434,35 @@
       "stats": {
         "ads": 209,
         "ads_norm": 209.0,
-        "spend": 81794,
-        "spend_norm": 81794,
-        "winners": 5,
-        "winners_norm": 5.0,
-        "hit_rate": 2.4,
+        "spend": 91360,
+        "spend_norm": 91360,
+        "winners": 6,
+        "winners_norm": 6.0,
+        "hit_rate": 2.9,
         "scalers": 4,
         "scalers_norm": 4.0,
         "scalers_complete": false,
         "primary_complete": false,
         "primary_progress": 0.63,
         "scaler_bar": 6000,
-        "cpa": 136,
+        "cpa": 134,
         "near_good": 2,
         "near_weak": 8,
-        "cold": 194
+        "cold": 193
       },
       "winners_list": [
         {
           "name": "2604-277-01 · Vitals · Burnt Out Pro · More Energy · Internal · Iteration · V1-03",
-          "spend": 14719,
-          "cpa": 88,
+          "spend": 17058,
+          "cpa": 91,
           "days": 29,
           "first_spend": "May 02",
           "sprint_day": 4
         },
         {
           "name": "2605-295-03 · Vitals · parentyoungkidsdad · More Energy · Internal · New Concept · V1-04",
-          "spend": 9893,
-          "cpa": 111,
+          "spend": 11605,
+          "cpa": 107,
           "days": 29,
           "first_spend": "May 02",
           "sprint_day": 4
@@ -484,6 +484,14 @@
           "sprint_day": 10
         },
         {
+          "name": "2605-300-03 · Vitals · parentyoungkidsdad · normal · Internal · New Concept · V1-04",
+          "spend": 5317,
+          "cpa": 140,
+          "days": 24,
+          "first_spend": "May 07",
+          "sprint_day": 8
+        },
+        {
           "name": "2605-334-21 · Vitals · Burnt Out Pro · Can't Focus · Internal · VBAU-01",
           "spend": 3866,
           "cpa": 161,
@@ -495,18 +503,18 @@
       "scalers_list": [
         {
           "name": "2604-277-01 · Vitals · Burnt Out Pro · More Energy · Internal · Iteration · V1-03",
-          "spend": 14719,
-          "spend_6w": 14719,
-          "cpa": 88,
+          "spend": 17058,
+          "spend_6w": 17058,
+          "cpa": 91,
           "days": 29,
           "first_spend": "May 02",
           "sprint_day": 4
         },
         {
           "name": "2605-295-03 · Vitals · parentyoungkidsdad · More Energy · Internal · New Concept · V1-04",
-          "spend": 9893,
-          "spend_6w": 9893,
-          "cpa": 111,
+          "spend": 11605,
+          "spend_6w": 11605,
+          "cpa": 107,
           "days": 29,
           "first_spend": "May 02",
           "sprint_day": 4
@@ -535,13 +543,13 @@
     }
   ],
   "timing": {
-    "total_winners": 175,
+    "total_winners": 178,
     "median_early": 5,
     "median_win": 13,
     "pct_d14": 55,
     "pct_d30": 88,
     "dist": [
-      18,
+      17,
       38,
       22,
       11,
@@ -552,27 +560,27 @@
     "early_threshold": 900
   },
   "lifecycle": {
-    "n_winners": 111,
+    "n_winners": 112,
     "floor": 5000,
-    "total_avg": 15119,
+    "total_avg": 15244,
     "pre30_pct": 55,
     "post30_pct": 44,
     "band_avgs": [
-      1789,
-      2492,
-      2073,
-      2080,
-      1866,
-      1084,
-      746,
-      621
+      1823,
+      2508,
+      2063,
+      2098,
+      1888,
+      1074,
+      740,
+      615
     ],
     "d0_14_pct": 28,
     "d14_30_pct": 27,
     "d30plus_pct": 44,
-    "d0_14_avg": 4281,
-    "d14_30_avg": 4153,
-    "d30plus_avg": 6685
+    "d0_14_avg": 4331,
+    "d14_30_avg": 4161,
+    "d30plus_avg": 6752
   },
   "chart": [
     {
@@ -682,7 +690,12 @@
     },
     {
       "label": "May 25",
-      "n": 69,
+      "n": 70,
+      "bucket": "post"
+    },
+    {
+      "label": "Jun 01",
+      "n": 36,
       "bucket": "post"
     }
   ]
