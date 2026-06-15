@@ -45,8 +45,8 @@
       "stats": {
         "ads": 212,
         "ads_norm": 102.0,
-        "spend": 234833,
-        "spend_norm": 113368,
+        "spend": 238142,
+        "spend_norm": 114965,
         "winners": 10,
         "winners_norm": 4.8,
         "hit_rate": 4.7,
@@ -64,8 +64,8 @@
       "winners_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 43971,
-          "cpa": 101,
+          "spend": 46877,
+          "cpa": 98,
           "days": 93,
           "first_spend": "Mar 06",
           "sprint_day": 17
@@ -146,9 +146,9 @@
       "scalers_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 43971,
+          "spend": 46877,
           "spend_6w": 21127,
-          "cpa": 101,
+          "cpa": 98,
           "days": 93,
           "first_spend": "Mar 06",
           "sprint_day": 17
@@ -205,8 +205,8 @@
       "stats": {
         "ads": 171,
         "ads_norm": 171.0,
-        "spend": 114199,
-        "spend_norm": 114199,
+        "spend": 117653,
+        "spend_norm": 117653,
         "winners": 8,
         "winners_norm": 8.0,
         "hit_rate": 4.7,
@@ -216,7 +216,7 @@
         "primary_complete": true,
         "primary_progress": 1.8,
         "scaler_bar": 6000,
-        "cpa": 94,
+        "cpa": 95,
         "near_good": 3,
         "near_weak": 5,
         "cold": 155
@@ -434,8 +434,8 @@
       "stats": {
         "ads": 209,
         "ads_norm": 209.0,
-        "spend": 92714,
-        "spend_norm": 92714,
+        "spend": 100172,
+        "spend_norm": 100172,
         "winners": 6,
         "winners_norm": 6.0,
         "hit_rate": 2.9,
@@ -445,7 +445,7 @@
         "primary_complete": true,
         "primary_progress": 0.87,
         "scaler_bar": 6000,
-        "cpa": 134,
+        "cpa": 135,
         "near_good": 2,
         "near_weak": 8,
         "cold": 193
@@ -453,16 +453,16 @@
       "winners_list": [
         {
           "name": "2604-277-01 · Vitals · Burnt Out Pro · More Energy · Internal · Iteration · V1-03",
-          "spend": 17166,
-          "cpa": 90,
+          "spend": 18867,
+          "cpa": 91,
           "days": 36,
           "first_spend": "May 02",
           "sprint_day": 4
         },
         {
           "name": "2605-295-03 · Vitals · parentyoungkidsdad · More Energy · Internal · New Concept · V1-04",
-          "spend": 11946,
-          "cpa": 111,
+          "spend": 13410,
+          "cpa": 120,
           "days": 36,
           "first_spend": "May 02",
           "sprint_day": 4
@@ -503,18 +503,18 @@
       "scalers_list": [
         {
           "name": "2604-277-01 · Vitals · Burnt Out Pro · More Energy · Internal · Iteration · V1-03",
-          "spend": 17166,
-          "spend_6w": 17166,
-          "cpa": 90,
+          "spend": 18867,
+          "spend_6w": 18559,
+          "cpa": 91,
           "days": 36,
           "first_spend": "May 02",
           "sprint_day": 4
         },
         {
           "name": "2605-295-03 · Vitals · parentyoungkidsdad · More Energy · Internal · New Concept · V1-04",
-          "spend": 11946,
-          "spend_6w": 11946,
-          "cpa": 111,
+          "spend": 13410,
+          "spend_6w": 13410,
+          "cpa": 120,
           "days": 36,
           "first_spend": "May 02",
           "sprint_day": 4
@@ -543,44 +543,44 @@
     }
   ],
   "timing": {
-    "total_winners": 178,
+    "total_winners": 180,
     "median_early": 5,
     "median_win": 13,
-    "pct_d14": 55,
+    "pct_d14": 54,
     "pct_d30": 88,
     "dist": [
       17,
-      38,
+      37,
       22,
       11,
       6,
-      0
+      1
     ],
     "threshold": 3000,
     "early_threshold": 900
   },
   "lifecycle": {
-    "n_winners": 112,
+    "n_winners": 113,
     "floor": 5000,
-    "total_avg": 15272,
+    "total_avg": 15289,
     "pre30_pct": 55,
-    "post30_pct": 44,
+    "post30_pct": 45,
     "band_avgs": [
-      1823,
-      2521,
-      2063,
-      2098,
-      1893,
-      1074,
-      740,
-      615
+      1807,
+      2499,
+      2045,
+      2080,
+      1901,
+      1086,
+      764,
+      610
     ],
     "d0_14_pct": 28,
     "d14_30_pct": 27,
-    "d30plus_pct": 44,
-    "d0_14_avg": 4344,
-    "d14_30_avg": 4161,
-    "d30plus_avg": 6767
+    "d30plus_pct": 45,
+    "d0_14_avg": 4306,
+    "d14_30_avg": 4125,
+    "d30plus_avg": 6858
   },
   "chart": [
     {
@@ -696,6 +696,11 @@
     {
       "label": "Jun 01",
       "n": 36,
+      "bucket": "post"
+    },
+    {
+      "label": "Jun 08",
+      "n": 5,
       "bucket": "post"
     }
   ]
