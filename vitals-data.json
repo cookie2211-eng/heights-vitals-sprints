@@ -45,8 +45,8 @@
       "stats": {
         "ads": 212,
         "ads_norm": 102.0,
-        "spend": 242755,
-        "spend_norm": 117192,
+        "spend": 243311,
+        "spend_norm": 117461,
         "winners": 10,
         "winners_norm": 4.8,
         "hit_rate": 4.7,
@@ -64,8 +64,8 @@
       "winners_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 50604,
-          "cpa": 100,
+          "spend": 51051,
+          "cpa": 101,
           "days": 107,
           "first_spend": "Mar 06",
           "sprint_day": 17
@@ -146,9 +146,9 @@
       "scalers_list": [
         {
           "name": "Hambi · CM5 · 1HP NET NEW: [C1]_[Vitals]_[D2C Diaries Podcast 1]",
-          "spend": 50604,
+          "spend": 51051,
           "spend_6w": 21127,
-          "cpa": 100,
+          "cpa": 101,
           "days": 107,
           "first_spend": "Mar 06",
           "sprint_day": 17
@@ -205,8 +205,8 @@
       "stats": {
         "ads": 171,
         "ads_norm": 171.0,
-        "spend": 121177,
-        "spend_norm": 121177,
+        "spend": 121510,
+        "spend_norm": 121510,
         "winners": 8,
         "winners_norm": 8.0,
         "hit_rate": 4.7,
@@ -434,8 +434,8 @@
       "stats": {
         "ads": 209,
         "ads_norm": 209.0,
-        "spend": 106024,
-        "spend_norm": 106024,
+        "spend": 108112,
+        "spend_norm": 108112,
         "winners": 6,
         "winners_norm": 6.0,
         "hit_rate": 2.9,
@@ -562,7 +562,7 @@
   "lifecycle": {
     "n_winners": 113,
     "floor": 5000,
-    "total_avg": 15419,
+    "total_avg": 15432,
     "pre30_pct": 55,
     "post30_pct": 45,
     "band_avgs": [
@@ -573,14 +573,14 @@
       1901,
       1089,
       784,
-      619
+      621
     ],
     "d0_14_pct": 28,
     "d14_30_pct": 27,
     "d30plus_pct": 45,
     "d0_14_avg": 4306,
     "d14_30_avg": 4125,
-    "d30plus_avg": 6988
+    "d30plus_avg": 7001
   },
   "chart": [
     {
@@ -706,6 +706,11 @@
     {
       "label": "Jun 15",
       "n": 44,
+      "bucket": "post"
+    },
+    {
+      "label": "Jun 22",
+      "n": 1,
       "bucket": "post"
     }
   ]
